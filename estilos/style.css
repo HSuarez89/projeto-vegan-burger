@@ -16,7 +16,7 @@ header {
     background-position: top, center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 35vh;
+    height: calc(100vw/1.817);
 }
 header > h1 {
     font-family: 'PhosphateInline';
@@ -36,7 +36,7 @@ header > nav > a {
 }
 main > section.order {
     text-align: center;
-    margin: 20px;
+    margin: 40px 0px;
 }
 main > section.order > a {
     font-family: 'Averia Gruesa Libre', cursive;
