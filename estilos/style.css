@@ -11,15 +11,16 @@
 header {
     background-image: url(../imagens/background_celular.png);
     background-position: top, center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    height: 50vh;
 }
 header > h1 {
     font-family: 'PhosphateInline';
     font-weight: normal;
     font-size: 3em;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px 0px;
 }
 header > nav {
     text-align: center;
