@@ -4,13 +4,9 @@
     font-family: 'PhosphateInline';
     src: url('../fontes/PhosphateInline.ttf') format(truetype);
 }
-
 * {
     margin: 0px;
     padding: 0px;
-}
-body {
-    
 }
 header {
     background-image: url(../imagens/background_celular.png);
@@ -24,9 +20,6 @@ header > h1 {
     font-size: 3em;
     text-align: center;
     padding-bottom: 10px;
-}
-header h1, nav {
-    
 }
 header > nav {
     text-align: center;
