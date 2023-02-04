@@ -11,14 +11,13 @@
 header {
     background-image: url(../imagens/background_celular.png);
     background-position: top, center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 50vh;
 }
 header > h1 {
     font-family: 'PhosphateInline';
     font-weight: normal;
-    font-size: 3em;
     text-align: center;
     padding: 10px 0px;
 }
@@ -27,7 +26,6 @@ header > nav {
 }
 header > nav > a {
     font-family: 'Averia Gruesa Libre', cursive;
-    font-size: 1.4em;
     text-decoration: none;
     color: black;
     padding: 5px;
