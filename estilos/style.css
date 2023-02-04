@@ -8,12 +8,15 @@
     margin: 0px;
     padding: 0px;
 }
+body {
+    background-color: #f8eee5;
+}
 header {
     background-image: url(../imagens/background_celular.png);
     background-position: top, center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 35vh;
 }
 header > h1 {
     font-family: 'PhosphateInline';
@@ -30,4 +33,16 @@ header > nav > a {
     color: black;
     padding: 5px;
     padding-right: 10px;
+}
+main > section.order {
+    text-align: center;
+    margin: 20px;
+}
+main > section.order > a {
+    font-family: 'Averia Gruesa Libre', cursive;
+    text-decoration: none;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #fc754c;
+    padding: 10px 20px;
 }
