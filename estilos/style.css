@@ -40,6 +40,37 @@ header > figure > img#burgers {
     left: 50%;
     transform: translate(-50%, 5%);
 }
+header > figure > img.fundo_esquerda {
+    position: absolute;
+    width: 15vw;
+}
+header > figure > img#tomate {
+    left: 5%;
+    top: 3%;
+}
+header > figure > img#trigo {
+    top: 13%;
+}
+header > figure > img#alho {
+    left: 1%;
+    top: 23%;
+}
+header > figure > img.fundo_direita {
+    position: absolute;
+    width: 15vw;
+}
+header > figure > img#queijo {
+    left: 80%;
+    top: 3%;
+}
+header > figure > img#pimentao {
+    left: 85%;
+    top: 13%;
+}
+header > figure > img#cogumelo {
+    left: 83%;
+    top: 23%;
+}
 main > section.order {
     text-align: center;
     margin: 40px 0px;
