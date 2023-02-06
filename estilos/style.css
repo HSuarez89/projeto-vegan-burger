@@ -12,7 +12,7 @@ body {
     background-color: #f8eee5;
 }
 header {
-    background-image: url(../imagens/background_celular.png);
+    background-image: url(../imagens/Fundo.png);
     background-position: top, center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -33,6 +33,12 @@ header > nav > a {
     color: black;
     padding: 5px;
     padding-right: 10px;
+}
+header > figure > img#burgers {
+    position: absolute;
+    width: 70vw;
+    left: 50%;
+    transform: translate(-50%, 5%);
 }
 main > section.order {
     text-align: center;
