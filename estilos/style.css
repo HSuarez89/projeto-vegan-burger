@@ -35,18 +35,17 @@ header > nav > a {
     padding-right: 10px;
 }
 header > figure > img#burgers {
-    position: absolute;
+    display: block;
+    margin: auto;
     width: 70vw;
-    left: 50%;
-    transform: translate(-50%, 5%);
 }
 header > figure > img.fundo_esquerda {
-    position: absolute;
+    position: relative;
     width: 15vw;
 }
 header > figure > img#tomate {
-    left: 5%;
-    top: 3%;
+    top: -50vh;
+    left: 5vw;
 }
 header > figure > img#trigo {
     top: 13%;
@@ -60,12 +59,12 @@ header > figure > img.fundo_direita {
     width: 15vw;
 }
 header > figure > img#queijo {
-    left: 80%;
-    top: 3%;
+    left: 80vw;
+    top: 2vh;
 }
 header > figure > img#pimentao {
-    left: 85%;
-    top: 13%;
+    left: 85vw;
+    top: 23vh;
 }
 header > figure > img#cogumelo {
     left: 83%;
