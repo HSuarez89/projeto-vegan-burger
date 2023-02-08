@@ -12,22 +12,19 @@ body {
 }
 header {
     background-color: #c3ffbd;
-    background-position: top, center;
-    background-size: contain;
-    background-repeat: no-repeat;
     height: 100vh;
 }
-header > h1 {
+header > div > h1 {
     font-family: 'PhosphateInline';
     font-weight: normal;
     font-size: 3em;
     text-align: center;
     padding: 10px 0px;
 }
-header > nav {
+header > div > nav {
     text-align: center;
 }
-header > nav > a {
+header > div > nav > a {
     font-family: 'Averia Gruesa Libre', cursive;
     text-decoration: none;
     color: black;
