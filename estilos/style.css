@@ -45,7 +45,7 @@ header > a {
     position: absolute;
     font-family: 'Averia Gruesa Libre', cursive;
     font-size: 1.5em;
-    top: 85vh;
+    top: 75vh;
     left: 50%;
     transform: translateX(-50%);
     text-decoration: none;
