@@ -11,6 +11,7 @@
 body {
 }
 header {
+    position: relative;
     background-color: #ffb7a2;
     height: 100vh;
 }
@@ -35,8 +36,22 @@ header > figure > img#hamburguer {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
     width: 85vw;
+}
+header > a {
+    position: absolute;
+    font-family: 'Averia Gruesa Libre', cursive;
+    font-size: 1.5em;
+    top: 85vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: white;
+    background-color: rgb(47, 95, 59);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.596);
 }
 main > section.order {
     text-align: center;
