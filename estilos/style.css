@@ -1,0 +1,67 @@
+@charset "UTF-8";
+:root {
+    --fundo: #F5FCD9;
+    --links: #95B086;
+    --order: #B0AE86;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background-color: var(--fundo);
+    width: 100vw;
+    height: 100vh;
+}
+header > img#logo {
+    display: block;
+    margin: auto;
+    width: 80vw;
+}
+header > ul {
+    list-style-type: none;
+    margin-top: 40px;
+    text-align: center;
+}
+header > ul > li {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+header > ul > li > a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--links);
+    padding: 10px;
+    border-radius: 15px;
+}
+header > figure > img#burger {
+    position: absolute;
+    width: 90vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+header > figure > img#ingredients {
+    position: absolute;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+header > a {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 30px;
+    background-color: var(--order);
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
+}
