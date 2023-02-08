@@ -11,10 +11,8 @@
 body {
 }
 header {
-    display: block;
-    position: absolute;
     background-color: #ffb7a2;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
 }
 header > div > h1 {
