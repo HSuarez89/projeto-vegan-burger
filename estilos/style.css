@@ -11,9 +11,10 @@
 body {
 }
 header {
-    position: relative;
+    position: absolute;
     background-color: #ffb7a2;
     height: 100vh;
+    width: 100vw;
 }
 header > div > h1 {
     font-family: 'PhosphateInline';
@@ -56,12 +57,4 @@ header > a {
 main > section.order {
     text-align: center;
     margin: 40px 0px;
-}
-main > section.order > a {
-    font-family: 'Averia Gruesa Libre', cursive;
-    text-decoration: none;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    background-color: #fc754c;
-    padding: 10px 20px;
 }
