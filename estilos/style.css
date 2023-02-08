@@ -9,18 +9,18 @@
     padding: 0px;
 }
 body {
-    background-color: #f8eee5;
 }
 header {
-    background-image: url(../imagens/Fundo.png);
+    background-color: #c3ffbd;
     background-position: top, center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: calc(100vw/1.817);
+    height: 100vh;
 }
 header > h1 {
     font-family: 'PhosphateInline';
     font-weight: normal;
+    font-size: 3em;
     text-align: center;
     padding: 10px 0px;
 }
@@ -34,41 +34,12 @@ header > nav > a {
     padding: 5px;
     padding-right: 10px;
 }
-header > figure > img#burgers {
-    display: block;
-    margin: auto;
-    width: 70vw;
-}
-header > figure > img.fundo_esquerda {
-    position: relative;
-    width: 15vw;
-}
-header > figure > img#tomate {
-    top: -50vh;
-    left: 5vw;
-}
-header > figure > img#trigo {
-    top: 13%;
-}
-header > figure > img#alho {
-    left: 1%;
-    top: 23%;
-}
-header > figure > img.fundo_direita {
+header > figure > img#hamburguer {
     position: absolute;
-    width: 15vw;
-}
-header > figure > img#queijo {
-    left: 80vw;
-    top: 2vh;
-}
-header > figure > img#pimentao {
-    left: 85vw;
-    top: 23vh;
-}
-header > figure > img#cogumelo {
-    left: 83%;
-    top: 23%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
 }
 main > section.order {
     text-align: center;
