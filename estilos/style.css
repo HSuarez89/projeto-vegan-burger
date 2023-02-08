@@ -1,8 +1,8 @@
 @charset "UTF-8";
 :root {
     --fundo: #F5FCD9;
-    --links: #95B086;
-    --order: #B0AE86;
+    --links: #006a48;
+    --order: #dd874d;
 }
 * {
     margin: 0px;
@@ -34,6 +34,7 @@ header > ul > li > a {
     background-color: var(--links);
     padding: 10px;
     border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
 }
 header > figure > img#burger {
     position: absolute;
