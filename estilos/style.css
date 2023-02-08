@@ -12,7 +12,7 @@ body {
     background-color: #f8eee5;
 }
 header {
-    background-image: url(../imagens/background_celular.png);
+    background-image: url(../imagens/Fundo.png);
     background-position: top, center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -33,6 +33,42 @@ header > nav > a {
     color: black;
     padding: 5px;
     padding-right: 10px;
+}
+header > figure > img#burgers {
+    display: block;
+    margin: auto;
+    width: 70vw;
+}
+header > figure > img.fundo_esquerda {
+    position: relative;
+    width: 15vw;
+}
+header > figure > img#tomate {
+    top: -50vh;
+    left: 5vw;
+}
+header > figure > img#trigo {
+    top: 13%;
+}
+header > figure > img#alho {
+    left: 1%;
+    top: 23%;
+}
+header > figure > img.fundo_direita {
+    position: absolute;
+    width: 15vw;
+}
+header > figure > img#queijo {
+    left: 80vw;
+    top: 2vh;
+}
+header > figure > img#pimentao {
+    left: 85vw;
+    top: 23vh;
+}
+header > figure > img#cogumelo {
+    left: 83%;
+    top: 23%;
 }
 main > section.order {
     text-align: center;
