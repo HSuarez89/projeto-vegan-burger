@@ -14,17 +14,17 @@ header {
     background-color: #c3ffbd;
     height: 100vh;
 }
-header > div > h1 {
+header > h1 {
     font-family: 'PhosphateInline';
     font-weight: normal;
     font-size: 3em;
     text-align: center;
     padding: 10px 0px;
 }
-header > div > nav {
+header > nav {
     text-align: center;
 }
-header > div > nav > a {
+header > nav > a {
     font-family: 'Averia Gruesa Libre', cursive;
     text-decoration: none;
     color: black;
