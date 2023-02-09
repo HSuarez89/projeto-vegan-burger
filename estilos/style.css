@@ -1,17 +1,28 @@
 @charset "UTF-8";
+@font-face {
+    font-family: Staaliches;
+    src: url('../fontes/Staatliches-Regular.ttf') format(truetype);
+}
+@font-face {
+    font-family: JosefinSans;
+    src: url('../fontes/JosefinSans-Medium.ttf') format(truetype);
+}
 :root {
     --fundo: #F5FCD9;
     --links: #006a48;
     --order: #dd874d;
+    --fonte-menu: Staaliches;
+    --fonte-links: JosefinSans;
 }
 * {
     margin: 0px;
     padding: 0px;
 }
 header {
+    display: block;
     background-color: var(--fundo);
     width: 100vw;
-    height: 100vh;
+    height: 20vh;
 }
 header > img#logo {
     display: block;
@@ -21,7 +32,6 @@ header > img#logo {
 header > ul {
     list-style-type: none;
     margin-top: 40px;
-    text-align: center;
 }
 header > ul > li {
     display: inline-block;
@@ -29,34 +39,41 @@ header > ul > li {
     padding: 5px;
 }
 header > ul > li > a {
-    color: white;
+    font-family: var(--fonte-links);
+    color: var(--links);
+    font-size: 1.3em;
     text-decoration: none;
-    background-color: var(--links);
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
 }
-header > figure > img#burger {
+main {
+    background-color: var(--fundo);
+}
+main > section#principal {
+    display: block;
+    width: 100vw;
+    height: 80vh;
+}
+main > section#principal > figure > img#burger {
     position: absolute;
-    width: 90vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 90vw;
     z-index: 2;
 }
-header > figure > img#ingredients {
+main > section#principal > figure > img#ingredients {
     position: absolute;
-    width: 100vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100vw;
     z-index: 1;
 }
-header > a {
+main > section#principal > a {
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 50%;
     transform: translateX(-50%);
+    font-family: var(--fonte-menu);
     padding: 20px 30px;
     background-color: var(--order);
     color: white;
