@@ -12,9 +12,9 @@
     src: url('../fontes/JosefinSans-Bold.ttf') format(truetype);
 }
 :root {
-    --fundo: #fce9bf;
-    --links: #1b6a4b;
-    --order: #B82609;
+    --fundo: #fff2c8;
+    --links: #000000;
+    --order: #cc5200;
     --fonte-menu: Staaliches;
     --fonte-links: JosefinSans;
 }
@@ -48,7 +48,6 @@ header > ul > li > a {
     font-size: 1.3em;
     font-weight: bold;
     text-decoration: none;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
 }
 main {
     background-color: var(--fundo);
