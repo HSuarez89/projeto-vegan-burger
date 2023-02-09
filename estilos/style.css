@@ -8,9 +8,9 @@
     src: url('../fontes/JosefinSans-Medium.ttf') format(truetype);
 }
 :root {
-    --fundo: #F5FCD9;
-    --links: #006a48;
-    --order: #dd874d;
+    --fundo: #fce9bf;
+    --links: #1b6a4b;
+    --order: #B82609;
     --fonte-menu: Staaliches;
     --fonte-links: JosefinSans;
 }
@@ -19,19 +19,19 @@
     padding: 0px;
 }
 header {
-    display: block;
     background-color: var(--fundo);
     width: 100vw;
     height: 20vh;
 }
 header > img#logo {
     display: block;
-    margin: auto;
     width: 80vw;
+    margin: auto;
 }
 header > ul {
     list-style-type: none;
     margin-top: 40px;
+    text-align: center;
 }
 header > ul > li {
     display: inline-block;
@@ -43,30 +43,29 @@ header > ul > li > a {
     color: var(--links);
     font-size: 1.3em;
     text-decoration: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
 }
 main {
     background-color: var(--fundo);
 }
 main > section#principal {
-    display: block;
     width: 100vw;
     height: 80vh;
 }
-main > section#principal > figure > img#burger {
+main > section#principal > img#burger {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 90vw;
     z-index: 2;
-}
-main > section#principal > figure > img#ingredients {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+main > section#principal > img#ingredients {
+    position: absolute;
     width: 100vw;
     z-index: 1;
+    left: -1.2%;
+    top: 30%;
 }
 main > section#principal > a {
     position: absolute;
