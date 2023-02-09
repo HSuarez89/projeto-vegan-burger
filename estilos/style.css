@@ -7,6 +7,10 @@
     font-family: JosefinSans;
     src: url('../fontes/JosefinSans-Medium.ttf') format(truetype);
 }
+@font-face {
+    font-family: JosefineSans;
+    src: url('../fontes/JosefinSans-Bold.ttf') format(truetype);
+}
 :root {
     --fundo: #fce9bf;
     --links: #1b6a4b;
@@ -42,6 +46,7 @@ header > ul > li > a {
     font-family: var(--fonte-links);
     color: var(--links);
     font-size: 1.3em;
+    font-weight: bold;
     text-decoration: none;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
 }
