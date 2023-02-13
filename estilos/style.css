@@ -102,6 +102,8 @@ main > section#menu > nav {
     margin-bottom: 6%;
 }
 main > section#menu > nav > a {
+    display: inline-block;
+    margin-bottom: 20px;
     font-family: var(--fonte-links);
     color: var(--contraste);
     text-decoration: none;
@@ -134,7 +136,7 @@ main > section#menu > div#menutodos > div#menuburgers {
     background-repeat: no-repeat;
     padding: 5px;
 }
-main > section#menu > div#menutodos > div#menudrinks {
+main > section#menu > div#menutodos > div#menusoft-drinks {
     height: 80vh;
     background-image: url(../imagens/Fundo-Bebidas.png);
     background-size: contain;
@@ -148,7 +150,7 @@ main > section#menu > div#menutodos > div#menuappetizer {
     background-repeat: no-repeat;
     padding: 5px;
 }
-main > section#menu > div#menutodos > div#menufriesandmás {
+main > section#menu > div#menutodos > div#menufries-and-más {
     height: 80vh;
     background-image: url(../imagens/Fundo-Acompanhamentos.png);
     background-size: contain;

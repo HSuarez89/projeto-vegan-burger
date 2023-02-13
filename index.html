@@ -27,8 +27,8 @@
             <h2>Menu</h2>
             <nav>
                 <a href="#">Burgers</a>
-                <a href="#">Drinks</a>
-                <a href="#">Appetizer</a>
+                <a href="#">Soft Drinks</a>
+                <a href="#">Appetizer</a><br>
                 <a href="#">Fries and Más</a>
                 <a href="#">Salads</a>
                 <a href="#">Sweets</a>
@@ -50,7 +50,7 @@
                     <h3>$</h3>
                     <p>Vegan Patty by Impossible Foods, dairy-free cheese, lettuce, pickles, tomato, onions.</p>
                 </div>
-                <div id="menudrinks" class="menu-page">
+                <div id="menusoft-drinks" class="menu-page">
                     <h2>Soft Drinks</h2>
                     <h3>Apple Juice</h3>
                     <h3>$</h3><br>
@@ -89,7 +89,7 @@
                     <h3>$</h3>
                     <p>Cajun style warm tortilla chips, housemade guacamole.</p>
                 </div>
-                <div id="menufriesandmás" class="menu-page">
+                <div id="menufries-and-más" class="menu-page">
                     <h2>Fries and Más</h2>
                     <h3>Bravas Style</h3>
                     <h3>$</h3>
@@ -154,7 +154,7 @@
                 pages.forEach(page => {
                     page.style.display = "none";
         });
-        const pageId = event.target.textContent.trim().toLowerCase();
+        const pageId = event.target.textContent.trim().toLowerCase().replace(/\s+/g, "-");
         document.getElementById("menu" + pageId).style.display = "block";
         }
         });
