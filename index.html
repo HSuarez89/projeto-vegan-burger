@@ -26,12 +26,12 @@
         <section id="menu">
             <h2>Menu</h2>
             <nav>
-                <a href="#">Burgers</a>
-                <a href="#">Soft Drinks</a>
-                <a href="#">Appetizer</a><br>
-                <a href="#">Fries and Más</a>
-                <a href="#">Salads</a>
-                <a href="#">Sweets</a>
+                <a href="#" class="menu-item">Burgers</a>
+                <a href="#" class="menu-item">Soft Drinks</a>
+                <a href="#" class="menu-item">Appetizer</a><br>
+                <a href="#" class="menu-item">Fries and Más</a>
+                <a href="#" class="menu-item">Salads</a>
+                <a href="#" class="menu-item">Sweets</a>
             </nav>
             <div id="menutodos">
                 <div id="menuburgers" class="menu-page">
@@ -130,6 +130,11 @@
         </section>
     </main>
     <script>
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function(event) {
+                event.preventDefault();
+            });
+        });
         const nav = document.querySelector("#menu nav");
         const pages = document.querySelectorAll("#menutodos .menu-page");
         pages.forEach(page => {
