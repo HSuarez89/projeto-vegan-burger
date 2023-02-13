@@ -109,33 +109,33 @@ main > section#menu > nav > a {
     border-left: 2px solid var(--contraste);
     border-right: 2px solid var(--contraste);
 }
-main > section#menu > div.menutodos h2 {
+main > section#menu > div#menutodos h2 {
     font-family: var(--fonte-menu);
     color: var(--order);
     text-shadow: 2px 2px #5c4839;
     text-align: center;
     font-size: 3em;
 }
-main > section#menu > div.menutodos h3, p {
+main > section#menu > div#menutodos h3, p {
     font-family: var(--fonte-links);
 }
-main > section#menu > div.menutodos h3 {
+main > section#menu > div#menutodos h3 {
     display: inline-block;
     padding-bottom: 3%;
     padding-top: 3%;
 }
-main > section#menu > div.menutodos p {
+main > section#menu > div#menutodos p {
     text-align: justify;
 }
-main > section#menu > div.menutodos > div#menuburger {
-    height: 100vh;
+main > section#menu > div#menutodos > div#menuburger {
+    height: 80vh;
     background-image: url(../imagens/Fundo-Burger.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
 }
-main > section#menu > div.menutodos > div#menuappetizer {
-    height: 100vh;
+main > section#menu > div#menutodos > div#menuappetizer {
+    height: 80vh;
     background-image: url(../imagens/Fundo-Burger.png);
     background-size: contain;
     background-repeat: no-repeat;
