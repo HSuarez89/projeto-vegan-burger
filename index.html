@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <title>Vegan Burger</title>
 </head>
+<body>
     <header>
         <img id="logo" src="imagens/Logopreta.png" alt="Vegan Burger">
         <ul>
@@ -31,25 +32,48 @@
                 <a href="#">Salads</a>
                 <a href="#">Sweets</a>
             </nav>
-            <div id="menuburger">
-                <h2>Burgers</h2>
-                <h3>El Vato Vegano</h3>
-                <h3>$</h3>
-                <p>Impossible Vegan patty, dairy-free cheese, guacamole, pico de galo, jalapeño and hot sauce.</p>
-                <h3>Vegan Deluxe</h3>
-                <h3>$</h3>
-                <p>Double Impossible Vegan patty infused with truffle oil, dairy-free cheese, arugula, tomato, pickles,
-                caramelized onions, truffle carpaccio, vegan truffle aioli.</p>
-                <h3>Vegan N'Shrooms</h3>
-                <h3>$</h3>
-                <p>Impossible Vegan patty, dairy-free cheese, caramelized onions, mushrooms, tomato, lettuce, and pickles.</p>
-                <h3>Vegan Meister</h3>
-                <h3>$</h3>
-                <p>Vegan Patty by Impossible Foods, dairy-free cheese, lettuce, pickles, tomato, onions.</p>
+            <div class="menutodos">
+                <div id="menuburger" class="menu-page">
+                    <h2>Burgers</h2>
+                    <h3>El Vato Vegano</h3>
+                    <h3>$</h3>
+                    <p>Impossible Vegan patty, dairy-free cheese, guacamole, pico de galo, jalapeño and hot sauce.</p>
+                    <h3>Vegan Deluxe</h3>
+                    <h3>$</h3>
+                    <p>Double Impossible Vegan patty infused with truffle oil, dairy-free cheese, arugula, tomato, pickles,
+                    caramelized onions, truffle carpaccio, vegan truffle aioli.</p>
+                    <h3>Vegan N'Shrooms</h3>
+                    <h3>$</h3>
+                    <p>Impossible Vegan patty, dairy-free cheese, caramelized onions, mushrooms, tomato, lettuce, and pickles.</p>
+                    <h3>Vegan Meister</h3>
+                    <h3>$</h3>
+                    <p>Vegan Patty by Impossible Foods, dairy-free cheese, lettuce, pickles, tomato, onions.</p>
+                </div>
+                <div id="menuappetizer" class="menu-page">
+                    <h2>Appetizers</h2>
+                    <h3>El Dip Clássico</h3>
+                    <h3>$</h3>
+                    <p>Cajun style warm tortilla chips, housemade guacamole.</p>
+                </div>
             </div>
         </section>
     </main>
-<body>
-    
+    <script>
+        const nav = document.querySelector("#menu nav");
+        const pages = document.querySelectorAll("#menutodos .menu-page");
+        pages.forEach(page => {
+          page.style.display = "none";
+        });
+        pages[0].style.display = "block";
+        nav.addEventListener("click", event => {
+          if (event.target.tagName === "A") {
+            const pageId = event.target.getAttribute("href").substr(1);
+            pages.forEach(page => {
+              page.style.display = "none";
+            });
+            document.getElementById(pageId).style.display = "block";
+          }
+        });
+        </script>
 </body>
 </html>
