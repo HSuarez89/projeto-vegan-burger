@@ -127,7 +127,7 @@ main > section#menu > div#menutodos h3 {
 main > section#menu > div#menutodos p {
     text-align: justify;
 }
-main > section#menu > div#menutodos > div#menuburger {
+main > section#menu > div#menutodos > div#menuburgers {
     height: 80vh;
     background-image: url(../imagens/Fundo-Burger.png);
     background-size: contain;
@@ -137,6 +137,27 @@ main > section#menu > div#menutodos > div#menuburger {
 main > section#menu > div#menutodos > div#menuappetizer {
     height: 80vh;
     background-image: url(../imagens/Fundo-Burger.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+main > section#menu > div#menutodos > div#menufriesandmás {
+    height: 80vh;
+    background-image: url(../imagens/Fundo-Acompanhamentos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+main > section#menu > div#menutodos > div#menusalads {
+    height: 80vh;
+    background-image: url(../imagens/Fundo-Salada.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+main > section#menu > div#menutodos > div#menusweets {
+    height: 80vh;
+    background-image: url(../imagens/Fundo-Sobremesa.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;

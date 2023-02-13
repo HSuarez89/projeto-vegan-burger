@@ -33,7 +33,7 @@
                 <a href="#">Sweets</a>
             </nav>
             <div id="menutodos">
-                <div id="menuburger" class="menu-page">
+                <div id="menuburgers" class="menu-page">
                     <h2>Burgers</h2>
                     <h3>El Vato Vegano</h3>
                     <h3>$</h3>
@@ -55,6 +55,43 @@
                     <h3>$</h3>
                     <p>Cajun style warm tortilla chips, housemade guacamole.</p>
                 </div>
+                <div id="menufriesandmás" class="menu-page">
+                    <h2>Fries and Más</h2>
+                    <h3>Bravas Style</h3>
+                    <h3>$</h3>
+                    <p>Spicy hand-cut fries, housemade brava aioli.</p>
+                    <h3>Onion Rings</h3>
+                    <h3>$</h3>
+                    <p>Our thick-cut and crispy onion rings, BBQ souce.</p>
+                    <h3>Plan Fries</h3>
+                    <h3>$</h3>
+                    <p>Hand-cut fries.</p>
+                    <h3>Yuca Fries</h3>
+                    <h3>$</h3>
+                    <p>Crispy outside and cream inside, housemade cillantro souce.</p>
+                    <h3>Tostones</h3>
+                    <h3>$</h3>
+                    <p>Crispy fried plantain, housemade cillantro souce.</p>
+                    <h3>Sweet Potato Fries</h3>
+                    <h3>$</h3>
+                    <p>Hand-cut sweet potato fries, soft inside and crispy outside.</p>
+                </div>
+                <div id="menusalads" class="menu-page">
+                    <h2>Salads</h2>
+                    <h3>Ceasar Salad</h3>
+                    <h3>$</h3>
+                    <p>Crispy romaine lettuce, shaved parmesan, croutons, and ceasar dressing.</p>
+                    <h3>Farmer's Greens Salad</h3>
+                    <h3>$</h3>
+                    <p>Arugula, tomato, carrots, red onions, mushrooms, green and red peppers, hard boiled egg, 
+                    balsamic vinegar and olive oil</p>
+                </div>
+                <div id="menusweets" class="menu-page">
+                    <h2>Sweets</h2>
+                    <h3>Churros</h3>
+                    <h3>$</h3>
+                    <p>Deep-fried churros, coated with sugar and cinnamon. Your choice of Caramel Souce or Nutella.</p>
+                </div>
             </div>
         </section>
     </main>
@@ -69,10 +106,23 @@
           if (event.target.tagName === "A") {
             const pageId = event.target.getAttribute("href").substr(1);
             pages.forEach(page => {
-              page.style.display = "none";
+                page.style.display = "none";
             });
             document.getElementById(pageId).style.display = "block";
           }
+        });
+        pages.forEach(page => {
+            page.style.display = "none";
+        });
+        pages[0].style.display = "block";
+        nav.addEventListener("click", event => {
+            if (event.target.tagName === "A") {
+                pages.forEach(page => {
+                    page.style.display = "none";
+        });
+        const pageId = event.target.textContent.trim().toLowerCase();
+        document.getElementById("menu" + pageId).style.display = "block";
+        }
         });
         </script>
 </body>
