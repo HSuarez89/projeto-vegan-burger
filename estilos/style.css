@@ -23,6 +23,9 @@
     margin: 0px;
     padding: 0px;
 }
+body {
+    background-color: var(--fundo);
+}
 header {
     background-color: var(--fundo);
     width: 100vw;
