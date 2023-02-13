@@ -134,6 +134,13 @@ main > section#menu > div#menutodos > div#menuburgers {
     background-repeat: no-repeat;
     padding: 5px;
 }
+main > section#menu > div#menutodos > div#menudrinks {
+    height: 80vh;
+    background-image: url(../imagens/Fundo-Bebidas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
 main > section#menu > div#menutodos > div#menuappetizer {
     height: 80vh;
     background-image: url(../imagens/Fundo-Burger.png);
