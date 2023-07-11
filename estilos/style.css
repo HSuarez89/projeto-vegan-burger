@@ -109,6 +109,14 @@ main .titulo-section {
     padding-top: 3%;
     border-top: 5px dotted var(--contraste);
 }
+  .menu-page.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-page.inactive {
+    transform: translateX(-100%);
+    display: none;
+  }
 main > section#menu > nav {
     text-align: center;
     margin-top: 6%;
@@ -143,7 +151,6 @@ main > section#menu > div#menutodos p {
     text-align: justify;
 }
 main > section#menu > div#menutodos > div#menuburgers {
-    left: 400px;
     height: 100vh;
     background-image: url(../imagens/Fundo-Burger.png);
     background-size: contain;
@@ -152,8 +159,7 @@ main > section#menu > div#menutodos > div#menuburgers {
     transition: 0.5s;
 }
 main > section#menu > div#menutodos > div#menusoft-drinks {
-    display: none;
-    height: 80vh;
+    height: 100vh;
     background-image: url(../imagens/Fundo-Bebidas.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -161,8 +167,7 @@ main > section#menu > div#menutodos > div#menusoft-drinks {
     transition: 0.5s;
 }
 main > section#menu > div#menutodos > div#menuappetizer {
-    display: none;
-    height: 80vh;
+    height: 100vh;
     background-image: url(../imagens/Fundo-Tortillas.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -170,8 +175,7 @@ main > section#menu > div#menutodos > div#menuappetizer {
     transition: 0.5s;
 }
 main > section#menu > div#menutodos > div#menufries-and-más {
-    display: none;
-    height: 80vh;
+    height: 100vh;
     background-image: url(../imagens/Fundo-Acompanhamentos.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -179,8 +183,7 @@ main > section#menu > div#menutodos > div#menufries-and-más {
     transition: 0.5s;
 }
 main > section#menu > div#menutodos > div#menusalads {
-    display: none;
-    height: 80vh;
+    height: 100vh;
     background-image: url(../imagens/Fundo-Salada.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -188,8 +191,7 @@ main > section#menu > div#menutodos > div#menusalads {
     transition: 0.5s;
 }
 main > section#menu > div#menutodos > div#menusweets {
-    display: none;
-    height: 80vh;
+    height: 100vh;
     background-image: url(../imagens/Fundo-Sobremesa.png);
     background-size: contain;
     background-repeat: no-repeat;

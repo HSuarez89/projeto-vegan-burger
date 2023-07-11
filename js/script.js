@@ -79,14 +79,15 @@ function trocaMenu(e){
 function associaTroca(conteudo){
     var id = 'menu' + conteudo.trim().toLowerCase().replace(/\s+/g, "-");
     var pagina = document.querySelectorAll('.menu-page')
-    var janela = window.innerWidth
     pagina.forEach(page =>{
         if(page.id == id){
-            page.style.display = 'block'
+            page.classList.remove('inactive');
+            page.classList.add('active');
             page.style.left = '0px'
         }else{
-            page.style.display = 'none'
-            page.style.left = '400px'
+            page.classList.remove('active');
+            page.classList.add('inactive');
+            page.style.left = (window.innerWidth * 2) + 'px'
         }
     })
     }
