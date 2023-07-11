@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Staaliches;
+    src: url('../fontes/Staatliches-Regular.ttf') format(truetype);
+}
+@font-face {
+    font-family: JosefinSans;
+    src: url('../fontes/JosefinSans-Medium.ttf') format(truetype);
+}
+@font-face {
+    font-family: JosefineSans;
+    src: url('../fontes/JosefinSans-Bold.ttf') format(truetype);
+}
+:root {
+    --fundo: #f7f2e9;
+    --links: #5c4839;
+    --order: #bc4721;
+    --contraste: #006a48;
+    --fonte-menu: Staaliches;
+    --fonte-links: JosefinSans;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: var(--fundo);
+}
+header {
+    background-color: var(--fundo);
+    width: 100vw;
+    height: 15vh;
+}
+header > img#logo {
+    display: block;
+    width: 80vw;
+    margin: auto;
+}
+header > ul {
+    margin-top: 5%;
+    list-style-type: none;
+    text-align: center;
+}
+header > ul > li {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+header > ul > li > a {
+    font-family: var(--fonte-links);
+    color: var(--links);
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+}
+main {
+    background-color: var(--fundo);
+}
+main > section#principal {
+    width: 100vw;
+    height: 85vh;
+}
+main > section#principal > img#burger {
+    position: absolute;
+    width: 90vw;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main > section#principal > img#ingredients {
+    position: absolute;
+    width: 100vw;
+    z-index: 1;
+    left: -1.2%;
+    top: 30%;
+}
+main > section#principal > a {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--fonte-menu);
+    padding: 20px 30px;
+    background-color: var(--order);
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
+}
+main > section#menu > h2 {
+    font-family: var(--fonte-links);
+    color: var(--links);
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: 10%;
+    padding-top: 3%;
+    border-top: 5px dotted var(--contraste);
+}
+main > section#menu > nav {
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+main > section#menu > nav > a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: var(--fonte-links);
+    color: var(--contraste);
+    text-decoration: none;
+    padding: 3px;
+    border-left: 2px solid var(--contraste);
+    border-right: 2px solid var(--contraste);
+}
+main > section#menu > div#menutodos h2 {
+    font-family: var(--fonte-menu);
+    color: var(--order);
+    text-shadow: 2px 2px #5c4839;
+    text-align: center;
+    font-size: 3em;
+}
+main > section#menu > div#menutodos h3, p {
+    font-family: var(--fonte-links);
+}
+main > section#menu > div#menutodos h3 {
+    display: inline-block;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+main > section#menu > div#menutodos p {
+    text-align: justify;
+}
+main > section#menu > div#menutodos > div#menuburgers {
+    height: 80vh;
+    background-image: url(../imagens/Fundo-Burger.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+main > section#menu > div#menutodos > div#menusoft-drinks {
+    height: 80vh;
+    background-image: url(../imagens/Fundo-Bebidas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+main > section#menu > div#menutodos > div#menuappetizer {
+    height: 80vh;
+    background-image: url(../imagens/Fundo-Tortillas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+main > section#menu > div#menutodos > div#menufries-and-más {
+    height: 80vh;
+    background-image: url(../imagens/Fundo-Acompanhamentos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+main > section#menu > div#menutodos > div#menusalads {
+    height: 80vh;
+    background-image: url(../imagens/Fundo-Salada.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+main > section#menu > div#menutodos > div#menusweets {
+    height: 80vh;
+    background-image: url(../imagens/Fundo-Sobremesa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
