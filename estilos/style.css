@@ -135,7 +135,7 @@ main > section#menu > div#menutodos h3, p {
     font-family: var(--fonte-links);
 }
 main > section#menu > div#menutodos h3 {
-    display: inline-block;
+    display: inline;
     padding-bottom: 3%;
     padding-top: 3%;
 }
@@ -150,13 +150,16 @@ main > section#menu > div#menutodos > div#menuburgers {
     padding: 5px;
 }
 main > section#menu > div#menutodos > div#menusoft-drinks {
+    display: none;
     height: 80vh;
     background-image: url(../imagens/Fundo-Bebidas.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
+    right: 0px;
 }
 main > section#menu > div#menutodos > div#menuappetizer {
+    display: none;
     height: 80vh;
     background-image: url(../imagens/Fundo-Tortillas.png);
     background-size: contain;
@@ -164,6 +167,7 @@ main > section#menu > div#menutodos > div#menuappetizer {
     padding: 5px;
 }
 main > section#menu > div#menutodos > div#menufries-and-más {
+    display: none;
     height: 80vh;
     background-image: url(../imagens/Fundo-Acompanhamentos.png);
     background-size: contain;
@@ -171,6 +175,7 @@ main > section#menu > div#menutodos > div#menufries-and-más {
     padding: 5px;
 }
 main > section#menu > div#menutodos > div#menusalads {
+    display: none;
     height: 80vh;
     background-image: url(../imagens/Fundo-Salada.png);
     background-size: contain;
@@ -178,6 +183,7 @@ main > section#menu > div#menutodos > div#menusalads {
     padding: 5px;
 }
 main > section#menu > div#menutodos > div#menusweets {
+    display: none;
     height: 80vh;
     background-image: url(../imagens/Fundo-Sobremesa.png);
     background-size: contain;

@@ -63,4 +63,28 @@ function scrollToTop() {
   }
 //animação do menu
 
+var menu = document.querySelectorAll('.menu-item')
+var conteudo = []
 
+menu.forEach(item => {
+    item.addEventListener('click', trocaMenu)
+})
+
+function trocaMenu(e){
+    e.preventDefault()
+    conteudo = e.target.innerHTML
+    associaTroca(conteudo)
+}
+
+function associaTroca(conteudo){
+    var id = 'menu' + conteudo.trim().toLowerCase().replace(/\s+/g, "-");
+    var pagina = document.querySelectorAll('.menu-page')
+    var janela = window.innerWidth
+    pagina.forEach(page =>{
+        if(page.id == id){
+            page.style.display = 'block'
+        }else{
+            page.style.display = 'none'
+        }
+    })
+    }
