@@ -143,52 +143,64 @@ main > section#menu > div#menutodos p {
     text-align: justify;
 }
 main > section#menu > div#menutodos > div#menuburgers {
+    position: relative;
+    left: 400px;
     height: 80vh;
     background-image: url(../imagens/Fundo-Burger.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
+    transition: 0.5s;
 }
 main > section#menu > div#menutodos > div#menusoft-drinks {
     display: none;
+    position: relative;
     height: 80vh;
     background-image: url(../imagens/Fundo-Bebidas.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
-    right: 0px;
+    transition: 0.5s;
 }
 main > section#menu > div#menutodos > div#menuappetizer {
     display: none;
+    position: relative;
     height: 80vh;
     background-image: url(../imagens/Fundo-Tortillas.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
+    transition: 0.5s;
 }
 main > section#menu > div#menutodos > div#menufries-and-más {
     display: none;
+    position: relative;
     height: 80vh;
     background-image: url(../imagens/Fundo-Acompanhamentos.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
+    transition: 0.5s;
 }
 main > section#menu > div#menutodos > div#menusalads {
     display: none;
+    position: relative;
     height: 80vh;
     background-image: url(../imagens/Fundo-Salada.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
+    transition: 0.5s;
 }
 main > section#menu > div#menutodos > div#menusweets {
     display: none;
+    position: relative;
     height: 80vh;
     background-image: url(../imagens/Fundo-Sobremesa.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
+    transition: 0.5s;
 }
 main > section#about {
     width: 100vw;

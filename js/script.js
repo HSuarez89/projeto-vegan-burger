@@ -64,7 +64,7 @@ function scrollToTop() {
 //animação do menu
 
 var menu = document.querySelectorAll('.menu-item')
-var conteudo = []
+var conteudo = 'menuburgers'
 
 menu.forEach(item => {
     item.addEventListener('click', trocaMenu)
@@ -83,8 +83,10 @@ function associaTroca(conteudo){
     pagina.forEach(page =>{
         if(page.id == id){
             page.style.display = 'block'
+            page.style.left = '0px'
         }else{
             page.style.display = 'none'
+            page.style.left = '400px'
         }
     })
     }
