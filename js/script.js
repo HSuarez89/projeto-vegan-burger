@@ -81,13 +81,9 @@ function associaTroca(conteudo){
     var pagina = document.querySelectorAll('.menu-page')
     pagina.forEach(page =>{
         if(page.id == id){
-            page.classList.remove('inactive');
-            page.classList.add('active');
             page.style.left = '0px'
         }else{
-            page.classList.remove('active');
-            page.classList.add('inactive');
-            page.style.left = (window.innerWidth * 2) + 'px'
+            page.style.left = '100%'
         }
     })
     }
