@@ -7,7 +7,6 @@ const menuCabecalho = document.getElementById('menu-cabecalho')
 const botaoOrder = document.getElementById('order')
 
 window.onload = function(){
-    scrollToTop()
     animacaoBurger()
 }
 
@@ -55,12 +54,12 @@ function nativeScroll(distanceFromTheTop){
 function scrollToSection(e){
     e.preventDefault()
     const distanceFromTheTop = getDistanceFromTheTop(e.target)
-    console.log(distanceFromTheTop)
     nativeScroll(distanceFromTheTop)
 }
 
 function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    const topo = document.querySelector('header')
+    window.scrollTo({ top: 0, behavior: 'auto'})
   }
 //animação do menu
 

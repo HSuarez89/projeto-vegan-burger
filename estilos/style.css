@@ -27,9 +27,10 @@ body {
     background-color: var(--fundo);
 }
 header {
+    position: absolute;
     background-color: var(--fundo);
     width: 100vw;
-    height: 15vh;
+    z-index: 2;
 }
 header > img#logo {
     display: block;
@@ -48,7 +49,7 @@ header > ul {
 header > ul > li {
     display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 5px;
+    padding: 5px 15px 15px 15px;
 }
 header > ul > li > a {
     font-family: var(--fonte-links);
@@ -61,8 +62,9 @@ main {
     background-color: var(--fundo);
 }
 main > section#principal {
+    position: relative;
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
 }
 main > section#principal > div#menutodos{
     display: block;
@@ -112,6 +114,10 @@ main .titulo-section {
     padding-top: 3%;
     border-top: 5px dotted var(--contraste);
 }
+main > section#menu {
+    position: relative;
+    height: 100vh;
+}
 main .menu-page {
     transition: left 0.3s;
   }
@@ -144,8 +150,8 @@ main > section#menu > div#menutodos h3, p {
     font-family: var(--fonte-links);
 }
 main > section#menu > div#menutodos h3 {
-    display: inline;
-    padding-bottom: 3%;
+    display: inline-block;
+    padding-bottom: 7px;
     padding-top: 3%;
 }
 main > section#menu > div#menutodos p {
@@ -153,7 +159,7 @@ main > section#menu > div#menutodos p {
 }
 main > section#menu > div#menutodos > div#menuburgers {
     position: absolute;
-    height: 100vh;
+    height: 60vh;
     background-image: url(../imagens/Fundo-Burger.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -161,8 +167,9 @@ main > section#menu > div#menutodos > div#menuburgers {
 }
 main > section#menu > div#menutodos > div#menusoft-drinks {
     position: absolute;
+    height: 60vh;
+    width: 100vw;
     left: 100%;
-    height: 100vh;
     background-image: url(../imagens/Fundo-Bebidas.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -170,7 +177,7 @@ main > section#menu > div#menutodos > div#menusoft-drinks {
 }
 main > section#menu > div#menutodos > div#menuappetizer {
     position: absolute;
-    height: 100vh;
+    height: 60vh;
     left: 100%;
     background-image: url(../imagens/Fundo-Tortillas.png);
     background-size: contain;
@@ -179,7 +186,7 @@ main > section#menu > div#menutodos > div#menuappetizer {
 }
 main > section#menu > div#menutodos > div#menufries-and-más {
     position: absolute;
-    height: 100vh;
+    height: 60vh;
     left: 100%;
     background-image: url(../imagens/Fundo-Acompanhamentos.png);
     background-size: contain;
@@ -188,7 +195,7 @@ main > section#menu > div#menutodos > div#menufries-and-más {
 }
 main > section#menu > div#menutodos > div#menusalads {
     position: absolute;
-    height: 100vh;
+    height: 60vh;
     left: 100%;
     background-image: url(../imagens/Fundo-Salada.png);
     background-size: contain;
@@ -197,7 +204,7 @@ main > section#menu > div#menutodos > div#menusalads {
 }
 main > section#menu > div#menutodos > div#menusweets {
     position: absolute;
-    height: 100vh;
+    height: 60vh;
     left: 100%;
     background-image: url(../imagens/Fundo-Sobremesa.png);
     background-size: contain;
@@ -205,18 +212,10 @@ main > section#menu > div#menutodos > div#menusweets {
     padding: 5px;
 }
 main > section#about {
+    position: relative;
     height: 100vh;
 }
 main > section#location {
+    position: relative;
     height: 100vh;
-}
-main > section#location > div#map{
-    height: 80vh;
-}
-main > section#location > div#map > iframe{
-    display: block;
-    margin: auto;
-    width: 80vw;
-    height: 30vh;
-    padding-top: 30px;
 }
