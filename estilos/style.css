@@ -116,8 +116,7 @@ main .menu-page {
     transition: left 0.3s;
   }
 main > section#menu > div#menutodos{
-    position: relative;
-    height: 100vh;
+    height: 78.7vh;
 }
 main > section#menu > nav {
     text-align: center;
@@ -206,17 +205,18 @@ main > section#menu > div#menutodos > div#menusweets {
     padding: 5px;
 }
 main > section#about {
-    width: 100vw;
     height: 100vh;
-    position: relative;
 }
 main > section#location {
-    width: 100vw;
     height: 100vh;
+}
+main > section#location > div#map{
+    height: 80vh;
 }
 main > section#location > div#map > iframe{
     display: block;
     margin: auto;
-    width: 95vw;
-    padding-top: 50px;
+    width: 80vw;
+    height: 30vh;
+    padding-top: 30px;
 }

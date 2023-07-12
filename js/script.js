@@ -40,8 +40,8 @@ menuLinks.forEach((link) => {
     link.addEventListener('click', scrollToSection)
 })
 
-function getDistanceFromTheTop(element){
-    const id = element.getAttribute('href')
+function getDistanceFromTheTop(e){
+    const id = e.getAttribute('href')
     return document.querySelector(id).offsetTop
 }
 
@@ -55,6 +55,7 @@ function nativeScroll(distanceFromTheTop){
 function scrollToSection(e){
     e.preventDefault()
     const distanceFromTheTop = getDistanceFromTheTop(e.target)
+    console.log(distanceFromTheTop)
     nativeScroll(distanceFromTheTop)
 }
 
