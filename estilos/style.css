@@ -206,3 +206,9 @@ main > section#location {
     width: 100vw;
     height: 100vh;
 }
+main > section#location > div#map > iframe{
+    display: block;
+    margin: auto;
+    width: 95vw;
+    padding-top: 50px;
+}
