@@ -8,6 +8,7 @@ const botaoOrder = document.getElementById('order')
 
 window.onload = function(){
     animacaoBurger()
+    scrollToTop()
 }
 
 function animacaoBurger(){
@@ -34,32 +35,18 @@ function animacaoHome(){
 
 //animação de scroll do menu
 
-var menuLinks = document.querySelectorAll('#menu-cabecalho a')
-menuLinks.forEach((link) => {
-    link.addEventListener('click', scrollToSection)
+var menuClick = document.querySelectorAll('#menu-cabecalho a')
+menuClick.forEach(item =>{
+    item.addEventListener('click', scrollToSelection)
 })
 
-function getDistanceFromTheTop(e){
-    const id = e.getAttribute('href')
-    return document.querySelector(id).offsetTop
-}
-
-function nativeScroll(distanceFromTheTop){
-    window.scroll({
-        top: distanceFromTheTop,
-        behavior: 'smooth',
-    })
-}
-
-function scrollToSection(e){
-    e.preventDefault()
-    const distanceFromTheTop = getDistanceFromTheTop(e.target)
-    nativeScroll(distanceFromTheTop)
+function scrollToSelection(event){
+    var idLink = event.target
+    console.log(idLink)
 }
 
 function scrollToTop() {
-    const topo = document.querySelector('header')
-    window.scrollTo({ top: 0, behavior: 'auto'})
+    window.scrollTo({ top: 0, behavior: 'smooth'})
   }
 //animação do menu
 
