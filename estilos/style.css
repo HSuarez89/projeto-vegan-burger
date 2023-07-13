@@ -175,64 +175,82 @@ main > section#menu > div#menutodos > div#menuburgers {
     position: absolute;
     height: 60vh;
     width: 100vw;
+    transform: translateY(10px);
     background-image: url(../imagens/Fundo-Burger.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
+    opacity: 1;
+    transition: 0.3s;
 }
 main > section#menu > div#menutodos > div#menusoft-drinks {
     position: absolute;
     height: 60vh;
     width: 100vw;
-    left: 100%;
+    transform: translateY(10px);
     background-image: url(../imagens/Fundo-Bebidas.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
+    opacity: 0;
+    transition: 0.3s;
 }
 main > section#menu > div#menutodos > div#menuappetizer {
     position: absolute;
     height: 60vh;
     width: 100vw;
-    left: 100%;
+    transform: translateY(10px);
     background-image: url(../imagens/Fundo-Tortillas.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
+    opacity: 0;
+    transition: 0.3s;
 }
 main > section#menu > div#menutodos > div#menufries-and-más {
     position: absolute;
     height: 60vh;
     width: 100vw;
-    left: 100%;
+    transform: translateY(10px);
     background-image: url(../imagens/Fundo-Acompanhamentos.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
+    opacity: 0;
+    transition: 0.3s;
 }
 main > section#menu > div#menutodos > div#menusalads {
     position: absolute;
     height: 60vh;
     width: 100vw;
-    left: 100%;
+    transform: translateY(10px);
     background-image: url(../imagens/Fundo-Salada.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
+    opacity: 0;
+    transition: 0.3s;
 }
 main > section#menu > div#menutodos > div#menusweets {
     position: absolute;
     height: 60vh;
     width: 100vw;
-    left: 100%;
+    transform: translateY(10px);
     background-image: url(../imagens/Fundo-Sobremesa.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
+    opacity: 0;
+    transition: 0.3s;
 }
 main > section#about {
     height: 100vh;
 }
 main > section#location {
     height: 100vh;
+}
+main > section#location iframe{
+    display: block;
+    width: 80vw;
+    margin: auto;
 }

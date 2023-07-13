@@ -42,7 +42,8 @@ menuClick.forEach(item =>{
 function scrollToSelection(event){
     var tagLink = event.target
     var idLink = tagLink.getAttribute('href')
-    console.log(idLink)
+    var idSection = document.querySelector(idLink).offSetTop
+    console.log(idSection)
 }
 var botaoTopo = document.querySelector('#botao')
 botaoTopo.addEventListener('click', scrollToTop)
@@ -69,9 +70,11 @@ function associaTroca(conteudo){
     var pagina = document.querySelectorAll('.menu-page')
     pagina.forEach(page =>{
         if(page.id == id){
-            page.style.left = '0px'
+            page.style.opacity = 1
+            page.style.transform = 'translateY(0px)'
         }else{
-            page.style.left = '100%'
+            page.style.opacity = 0
+            page.style.transform = 'translateY(10px)'
         }
     })
     }
