@@ -40,10 +40,12 @@ menuClick.forEach(item =>{
 })
 
 function scrollToSelection(event){
+    event.preventDefault()
     var tagLink = event.target
     var idLink = tagLink.getAttribute('href')
-    var idSection = document.querySelector(idLink).offSetTop
-    console.log(idSection)
+    var idSection = document.querySelector(idLink)
+    var distanceFromTop = idSection.offsetTop
+    window.scrollTo({top: distanceFromTop, behavior: 'smooth'})
 }
 var botaoTopo = document.querySelector('#botao')
 botaoTopo.addEventListener('click', scrollToTop)
