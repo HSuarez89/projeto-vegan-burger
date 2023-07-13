@@ -27,6 +27,7 @@
 }
 body {
     background-color: var(--fundo);
+    overflow-x: hidden;
 }
 header {
     background-color: var(--fundo);
@@ -70,6 +71,7 @@ main > section#sectionbotao{
     width: 15vw;
     height: 15vw;
     z-index: 2;
+    opacity: 1;
 }
 main #botao {
     width: 100%;

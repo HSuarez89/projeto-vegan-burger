@@ -40,7 +40,8 @@ menuClick.forEach(item =>{
 })
 
 function scrollToSelection(event){
-    var idLink = event.target
+    var tagLink = event.target
+    var idLink = tagLink.getAttribute('href')
     console.log(idLink)
 }
 var botaoTopo = document.querySelector('#botao')
