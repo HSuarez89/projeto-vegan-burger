@@ -62,12 +62,8 @@ main {
     background-color: var(--fundo);
 }
 main > section#principal {
-    position: relative;
     width: 100vw;
     height: 100vh;
-}
-main > section#principal > div#menutodos{
-    display: block;
 }
 main > section#principal > img#burger {
     position: absolute;
@@ -115,7 +111,6 @@ main .titulo-section {
     border-top: 5px dotted var(--contraste);
 }
 main > section#menu {
-    position: relative;
     height: 100vh;
 }
 main .menu-page {
@@ -212,10 +207,8 @@ main > section#menu > div#menutodos > div#menusweets {
     padding: 5px;
 }
 main > section#about {
-    position: relative;
     height: 100vh;
 }
 main > section#location {
-    position: relative;
     height: 100vh;
 }
