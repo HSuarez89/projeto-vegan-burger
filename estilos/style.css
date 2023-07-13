@@ -16,12 +16,14 @@
     --links: #5c4839;
     --order: #bc4721;
     --contraste: #006a48;
+    --verdeclaro: #00c47f;
     --fonte-menu: Staaliches;
     --fonte-links: JosefinSans;
 }
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body {
     background-color: var(--fundo);
@@ -32,15 +34,14 @@ header {
     z-index: 2;
 }
 header > img#logo {
-    position: relative;
+    display: block;
+    margin: auto;
     width: 80vw;
     left: 50%;
-    transform: translateX(-50%);
     opacity: 0;
     transition: 0.4s;
 }
 header > ul {
-    margin-top: 5%;
     list-style-type: none;
     text-align: center;
     opacity: 0;
@@ -54,33 +55,44 @@ header > ul > li {
 header > ul > li > a {
     font-family: var(--fonte-links);
     color: var(--links);
-    font-size: 1.3em;
+    font-size: 1.5em;
+    padding: 5px;
     font-weight: bold;
     text-decoration: none;
 }
 main {
     background-color: var(--fundo);
 }
+main > section#sectionbotao{
+    position: fixed;
+    top: 90vh;
+    left: 80vw;
+    width: 15vw;
+    height: 15vw;
+    z-index: 2;
+}
+main #botao {
+    width: 100%;
+}
 main > section#principal {
     width: 100vw;
-    height: 70vh;
+    height: 73vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main > section#principal > img#burger {
     position: absolute;
-    width: 90vw;
-    z-index: 2;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100vw;
+    top: 45%;
     opacity: 0;
     transition: 0.3s;
+    z-index: 2;
 }
 main > section#principal > img#ingredients {
     position: absolute;
-    width: 100vw;
-    z-index: 1;
-    left: -1.2%;
-    top: 33%;
+    width: 100%;
+    top: 40%;
     opacity: 0;
     transition: 0.3s;
 }
@@ -111,28 +123,33 @@ main .titulo-section {
     border-top: 5px dotted var(--contraste);
 }
 main > section#menu {
+    width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 main .menu-page {
     transition: left 0.3s;
   }
 main > section#menu > div#menutodos{
     height: 78.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main > section#menu > nav {
     text-align: center;
-    margin-top: 6%;
-    margin-bottom: 6%;
+    padding-top: 30px;
 }
 main > section#menu > nav > a {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    background-color: var(--contraste);
+    border-radius: 20px;
     font-family: var(--fonte-links);
-    color: var(--contraste);
+    color: white;
     text-decoration: none;
-    padding: 3px;
-    border-left: 2px solid var(--contraste);
-    border-right: 2px solid var(--contraste);
+    padding: 10px;
+    font-size: 1.3em;
 }
 main > section#menu > div#menutodos h2 {
     font-family: var(--fonte-menu);
@@ -155,6 +172,7 @@ main > section#menu > div#menutodos p {
 main > section#menu > div#menutodos > div#menuburgers {
     position: absolute;
     height: 60vh;
+    width: 100vw;
     background-image: url(../imagens/Fundo-Burger.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -173,6 +191,7 @@ main > section#menu > div#menutodos > div#menusoft-drinks {
 main > section#menu > div#menutodos > div#menuappetizer {
     position: absolute;
     height: 60vh;
+    width: 100vw;
     left: 100%;
     background-image: url(../imagens/Fundo-Tortillas.png);
     background-size: contain;
@@ -182,6 +201,7 @@ main > section#menu > div#menutodos > div#menuappetizer {
 main > section#menu > div#menutodos > div#menufries-and-más {
     position: absolute;
     height: 60vh;
+    width: 100vw;
     left: 100%;
     background-image: url(../imagens/Fundo-Acompanhamentos.png);
     background-size: contain;
@@ -191,6 +211,7 @@ main > section#menu > div#menutodos > div#menufries-and-más {
 main > section#menu > div#menutodos > div#menusalads {
     position: absolute;
     height: 60vh;
+    width: 100vw;
     left: 100%;
     background-image: url(../imagens/Fundo-Salada.png);
     background-size: contain;
@@ -200,6 +221,7 @@ main > section#menu > div#menutodos > div#menusalads {
 main > section#menu > div#menutodos > div#menusweets {
     position: absolute;
     height: 60vh;
+    width: 100vw;
     left: 100%;
     background-image: url(../imagens/Fundo-Sobremesa.png);
     background-size: contain;

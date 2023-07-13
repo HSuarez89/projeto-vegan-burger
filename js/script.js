@@ -8,12 +8,11 @@ const botaoOrder = document.getElementById('order')
 
 window.onload = function(){
     animacaoBurger()
-    scrollToTop()
 }
 
 function animacaoBurger(){
     burger.style.opacity = 1
-    burger.style.top = "50%"
+    burger.style.top = "37%"
     setTimeout(function(){
         animacaoIngredientes()
     }, 300)
@@ -24,7 +23,7 @@ function animacaoBurger(){
 
 function animacaoIngredientes(){
     ingredientes.style.opacity = 0.7
-    ingredientes.style.top = '30%'
+    ingredientes.style.top = '35%'
 }
 
 function animacaoHome(){
@@ -44,8 +43,9 @@ function scrollToSelection(event){
     var idLink = event.target
     console.log(idLink)
 }
-
-function scrollToTop() {
+var botaoTopo = document.querySelector('#botao')
+botaoTopo.addEventListener('click', scrollToTop)
+function scrollToTop(){
     window.scrollTo({ top: 0, behavior: 'smooth'})
   }
 //animação do menu
