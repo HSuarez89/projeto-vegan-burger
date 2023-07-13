@@ -79,9 +79,6 @@ main #botao {
 main > section#principal {
     width: 100vw;
     height: 73vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 main > section#principal > img#burger {
     position: absolute;
@@ -127,16 +124,12 @@ main .titulo-section {
 main > section#menu {
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
 }
 main .menu-page {
     transition: left 0.3s;
   }
 main > section#menu > div#menutodos{
     height: 78.7vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 main > section#menu > nav {
     text-align: center;
@@ -175,7 +168,7 @@ main > section#menu > div#menutodos > div#menuburgers {
     position: absolute;
     height: 60vh;
     width: 100vw;
-    transform: translateY(10px);
+    transform: translateY(50px);
     background-image: url(../imagens/Fundo-Burger.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -187,7 +180,7 @@ main > section#menu > div#menutodos > div#menusoft-drinks {
     position: absolute;
     height: 60vh;
     width: 100vw;
-    transform: translateY(10px);
+    transform: translateY(30px);
     background-image: url(../imagens/Fundo-Bebidas.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -199,7 +192,7 @@ main > section#menu > div#menutodos > div#menuappetizer {
     position: absolute;
     height: 60vh;
     width: 100vw;
-    transform: translateY(10px);
+    transform: translateY(30px);
     background-image: url(../imagens/Fundo-Tortillas.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -211,7 +204,7 @@ main > section#menu > div#menutodos > div#menufries-and-más {
     position: absolute;
     height: 60vh;
     width: 100vw;
-    transform: translateY(10px);
+    transform: translateY(30px);
     background-image: url(../imagens/Fundo-Acompanhamentos.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -223,7 +216,7 @@ main > section#menu > div#menutodos > div#menusalads {
     position: absolute;
     height: 60vh;
     width: 100vw;
-    transform: translateY(10px);
+    transform: translateY(30px);
     background-image: url(../imagens/Fundo-Salada.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -235,7 +228,7 @@ main > section#menu > div#menutodos > div#menusweets {
     position: absolute;
     height: 60vh;
     width: 100vw;
-    transform: translateY(10px);
+    transform: translateY(30px);
     background-image: url(../imagens/Fundo-Sobremesa.png);
     background-size: contain;
     background-repeat: no-repeat;

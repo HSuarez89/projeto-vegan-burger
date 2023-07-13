@@ -73,10 +73,10 @@ function associaTroca(conteudo){
     pagina.forEach(page =>{
         if(page.id == id){
             page.style.opacity = 1
-            page.style.transform = 'translateY(0px)'
+            page.style.transform = 'translateY(30px)'
         }else{
             page.style.opacity = 0
-            page.style.transform = 'translateY(10px)'
+            page.style.transform = 'translateY(50px)'
         }
     })
     }
