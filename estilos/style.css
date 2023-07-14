@@ -79,7 +79,7 @@ main #botao {
 }
 main > section#principal {
     width: 100vw;
-    height: 73vh;
+    height: 65vh;
 }
 main > section#principal > img#burger {
     position: absolute;

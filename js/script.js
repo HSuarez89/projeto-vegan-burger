@@ -4,6 +4,7 @@ const burger = document.getElementById('burger')
 const ingredientes = document.getElementById('ingredients')
 const logo = document.getElementById('logo')
 const menuCabecalho = document.getElementById('menu-cabecalho')
+const menuCabecalho2 = document.getElementById('menu-cabecalho2')
 const botaoOrder = document.getElementById('order')
 
 window.onload = function(){
@@ -29,6 +30,7 @@ function animacaoIngredientes(){
 function animacaoHome(){
     logo.style.opacity = 1
     menuCabecalho.style.opacity = 1
+    menuCabecalho2.style.opacity = 1
     botaoOrder.style.opacity = 1
 }
 
@@ -59,8 +61,8 @@ var menuPrincipal = document.querySelector('menu-cabecalho')
 window.addEventListener('scroll', toggleVisibilidade)
 function toggleVisibilidade(){
     var scrollTop = document.documentElement.scrollTop
-    console.log(scrollTop)
-    if (scrollTop > 200){
+    var alturaHeader = document.querySelector('header').offsetHeight
+    if (scrollTop > alturaHeader){
         botaoTopo.style.opacity = 1
     }else {
         botaoTopo.style.opacity = 0
