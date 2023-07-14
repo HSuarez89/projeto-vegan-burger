@@ -71,10 +71,11 @@ main > section#sectionbotao{
     width: 15vw;
     height: 15vw;
     z-index: 2;
-    opacity: 1;
 }
 main #botao {
     width: 100%;
+    opacity: 0;
+    transition: 0.3s;
 }
 main > section#principal {
     width: 100vw;

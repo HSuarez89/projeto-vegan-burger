@@ -47,11 +47,26 @@ function scrollToSelection(event){
     var distanceFromTop = idSection.offsetTop
     window.scrollTo({top: distanceFromTop, behavior: 'smooth'})
 }
+
+//animaçõ do botão que volta para o topo
+
 var botaoTopo = document.querySelector('#botao')
 botaoTopo.addEventListener('click', scrollToTop)
 function scrollToTop(){
     window.scrollTo({ top: 0, behavior: 'smooth'})
   }
+var menuPrincipal = document.querySelector('menu-cabecalho')
+window.addEventListener('scroll', toggleVisibilidade)
+function toggleVisibilidade(){
+    var scrollTop = document.documentElement.scrollTop
+    console.log(scrollTop)
+    if (scrollTop > 200){
+        botaoTopo.style.opacity = 1
+    }else {
+        botaoTopo.style.opacity = 0
+    }
+}
+
 //animação do menu
 
 var menu = document.querySelectorAll('.menu-item')
