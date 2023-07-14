@@ -12,9 +12,9 @@
     src: url('../fontes/JosefinSans-Bold.ttf') format(truetype);
 }
 :root {
-    --fundo: #f7f2e9;
-    --links: #5c4839;
-    --order: #bc4721;
+    --fundo: #f1e7d2;
+    --links: #736341;
+    --order: #f0a049;
     --contraste: #006a48;
     --verdeclaro: #00c47f;
     --fonte-menu: Staaliches;
@@ -30,7 +30,7 @@ body {
     overflow-x: hidden;
 }
 header {
-    background-color: var(--fundo);
+    position: absolute;
     width: 100vw;
     z-index: 2;
 }
@@ -79,7 +79,7 @@ main #botao {
 }
 main > section#principal {
     width: 100vw;
-    height: 65vh;
+    height: 100vh;
 }
 main > section#principal > img#burger {
     position: absolute;
@@ -103,7 +103,7 @@ main > section#principal > a {
     transform: translateX(-50%);
     font-family: var(--fonte-menu);
     padding: 20px 30px;
-    background-color: var(--order);
+    background-color: var(--contraste);
     color: white;
     text-decoration: none;
     font-size: 1.5em;
@@ -140,7 +140,6 @@ main > section#menu > nav > a {
     display: inline-block;
     margin-bottom: 10px;
     background-color: var(--contraste);
-    border-radius: 20px;
     font-family: var(--fonte-links);
     color: white;
     text-decoration: none;

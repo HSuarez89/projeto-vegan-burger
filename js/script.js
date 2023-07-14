@@ -30,7 +30,6 @@ function animacaoIngredientes(){
 function animacaoHome(){
     logo.style.opacity = 1
     menuCabecalho.style.opacity = 1
-    menuCabecalho2.style.opacity = 1
     botaoOrder.style.opacity = 1
 }
 
