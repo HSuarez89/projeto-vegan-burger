@@ -13,10 +13,10 @@
 }
 :root {
     --fundo: #f1e7d2;
-    --links: #736341;
-    --order: #f0a049;
-    --contraste: #006a48;
-    --verdeclaro: #00c47f;
+    --links: #6E5437;
+    --order: #BA9366;
+    --contraste: #508549;
+    --fundo2: #233B27;
     --fonte-menu: Staaliches;
     --fonte-links: JosefinSans;
 }
@@ -51,13 +51,12 @@ header > ul {
 header > ul > li {
     display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 5px 15px 15px 15px;
+    padding: 30px 15px 15px 15px;
 }
 header > ul > li > a {
     font-family: var(--fonte-links);
     color: var(--links);
     font-size: 1.5em;
-    padding: 5px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -103,7 +102,7 @@ main > section#principal > a {
     transform: translateX(-50%);
     font-family: var(--fonte-menu);
     padding: 20px 30px;
-    background-color: var(--contraste);
+    background-color: var(--fundo2);
     color: white;
     text-decoration: none;
     font-size: 1.5em;
@@ -120,7 +119,6 @@ main .titulo-section {
     font-size: 2em;
     padding-left: 10%;
     padding-top: 3%;
-    border-top: 5px dotted var(--contraste);
 }
 main > section#menu {
     width: 100vw;
@@ -139,7 +137,7 @@ main > section#menu > nav {
 main > section#menu > nav > a {
     display: inline-block;
     margin-bottom: 10px;
-    background-color: var(--contraste);
+    background-color: var(--fundo2);
     font-family: var(--fonte-links);
     color: white;
     text-decoration: none;
@@ -148,8 +146,8 @@ main > section#menu > nav > a {
 }
 main > section#menu > div#menutodos h2 {
     font-family: var(--fonte-menu);
-    color: var(--order);
-    text-shadow: 2px 2px #5c4839;
+    color: var(--contraste);
+    text-shadow: 2px 2px var(--fundo2);
     text-align: center;
     font-size: 3em;
 }
@@ -237,15 +235,13 @@ main > section#menu > div#menutodos > div#menusweets {
     transition: 0.3s;
 }
 main > section#about {
+    background-color: var(--fundo2);
     height: 100vh;
 }
-main > section#location {
-    height: 100vh;
+main > section#about > h2 {
+    color: white;
 }
-main > section#location iframe{
-    display: block;
-    width: 80vw;
-    margin: auto;
-    margin-top: 40px;
-    border: 0;
+main > section#about > p {
+    color: white;
+    padding-top: 50px;
 }
