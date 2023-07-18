@@ -24,7 +24,7 @@ function animacaoBurger(){
 
 function animacaoIngredientes(){
     ingredientes.style.opacity = 0.7
-    ingredientes.style.top = '35%'
+    ingredientes.style.top = '37%'
 }
 
 function animacaoHome(){

@@ -1,24 +1,14 @@
 @charset "UTF-8";
-@font-face {
-    font-family: Staaliches;
-    src: url('../fontes/Staatliches-Regular.ttf') format(truetype);
-}
-@font-face {
-    font-family: JosefinSans;
-    src: url('../fontes/JosefinSans-Medium.ttf') format(truetype);
-}
-@font-face {
-    font-family: JosefineSans;
-    src: url('../fontes/JosefinSans-Bold.ttf') format(truetype);
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;800&display=swap');
+
 :root {
     --fundo: #f1e7d2;
     --links: #6E5437;
     --order: #BA9366;
-    --contraste: #508549;
+    --contraste: #416d49;
     --fundo2: #233B27;
-    --fonte-menu: Staaliches;
-    --fonte-links: JosefinSans;
+    --fonte: Raleway;
 }
 * {
     margin: 0px;
@@ -50,14 +40,15 @@ header > ul {
 }
 header > ul > li {
     display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 30px 15px 15px 15px;
 }
 header > ul > li > a {
-    font-family: var(--fonte-links);
-    color: var(--links);
+    font-family: var(--fonte);
+    color: white;
+    background-color: var(--contraste);
+    padding: 5px;
+    border-radius: 7px;
     font-size: 1.5em;
-    font-weight: bold;
     text-decoration: none;
 }
 main {
@@ -100,12 +91,13 @@ main > section#principal > a {
     top: 85%;
     left: 50%;
     transform: translateX(-50%);
-    font-family: var(--fonte-menu);
+    font-family: var(--fonte);
+    font-weight: 600;
     padding: 20px 30px;
     background-color: var(--fundo2);
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
     border-radius: 30px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
@@ -113,7 +105,7 @@ main > section#principal > a {
     transition: 0.4s;
 }
 main .titulo-section {
-    font-family: var(--fonte-links);
+    font-family: var(--fonte);
     color: var(--links);
     font-weight: bold;
     font-size: 2em;
@@ -124,11 +116,9 @@ main > section#menu {
     width: 100vw;
     height: 100vh;
 }
-main .menu-page {
-    transition: left 0.3s;
-  }
-main > section#menu > div#menutodos{
-    height: 78.7vh;
+main > section#menu > img#menutitle {
+    width: 100vw;
+    padding-top: 20px;
 }
 main > section#menu > nav {
     text-align: center;
@@ -138,23 +128,25 @@ main > section#menu > nav > a {
     display: inline-block;
     margin-bottom: 10px;
     background-color: var(--fundo2);
-    font-family: var(--fonte-links);
+    font-family: var(--fonte);
     color: white;
     text-decoration: none;
     padding: 10px;
     font-size: 1.3em;
 }
 main > section#menu > div#menutodos h2 {
-    font-family: var(--fonte-menu);
+    font-family: var(--fonte);
+    font-weight: 800;
     color: var(--contraste);
     text-shadow: 2px 2px var(--fundo2);
     text-align: center;
     font-size: 3em;
 }
 main > section#menu > div#menutodos h3, p {
-    font-family: var(--fonte-links);
+    font-family: var(--fonte);
 }
 main > section#menu > div#menutodos h3 {
+    font-weight: 800;
     display: inline-block;
     padding-bottom: 1px;
     padding-top: 3%;
@@ -176,8 +168,8 @@ main > section#menu > div#menutodos > div#menuburgers {
 }
 main > section#menu > div#menutodos > div#menusoft-drinks {
     position: absolute;
-    height: 60vh;
     width: 100vw;
+    height: 65vh;
     transform: translateY(30px);
     background-image: url(../imagens/Fundo-Bebidas.png);
     background-size: contain;
@@ -235,13 +227,18 @@ main > section#menu > div#menutodos > div#menusweets {
     transition: 0.3s;
 }
 main > section#about {
-    background-color: var(--fundo2);
+    background-image: url("../imagens/Capaabout.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--fonte);
     height: 100vh;
 }
-main > section#about > h2 {
-    color: white;
+main > section#about > img {
+    width: 100vw;
+    margin-top: 20px;
 }
 main > section#about > p {
+    font-weight: 400;
     color: white;
     padding-top: 50px;
 }
