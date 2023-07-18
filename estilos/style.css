@@ -71,7 +71,7 @@ main > section#principal {
     width: 100vw;
     height: 100vh;
 }
-main > section#principal > img#burger {
+main > section#principal > img#burgerimg {
     position: absolute;
     width: 100vw;
     top: 45%;
@@ -79,7 +79,7 @@ main > section#principal > img#burger {
     transition: 0.3s;
     z-index: 2;
 }
-main > section#principal > img#ingredients {
+main > section#principal > img#ingredientsimg {
     position: absolute;
     width: 100%;
     top: 40%;
@@ -112,19 +112,19 @@ main .titulo-section {
     padding-left: 10%;
     padding-top: 3%;
 }
-main > section#menu {
+main > section#section-menu {
     width: 100vw;
     height: 100vh;
 }
-main > section#menu > img#menutitle {
+main > section#section-menu > img#menutitle {
     width: 100vw;
     padding-top: 20px;
 }
-main > section#menu > nav {
+main > section#section-menu > nav {
     text-align: center;
     padding-top: 30px;
 }
-main > section#menu > nav > a {
+main > section#section-menu > nav > a {
     display: inline-block;
     margin-bottom: 10px;
     background-color: var(--fundo2);
@@ -134,7 +134,7 @@ main > section#menu > nav > a {
     padding: 10px;
     font-size: 1.3em;
 }
-main > section#menu > div#menutodos h2 {
+main > section#section-menu > div#menutodos h2 {
     font-family: var(--fonte);
     font-weight: 800;
     color: var(--contraste);
@@ -142,19 +142,19 @@ main > section#menu > div#menutodos h2 {
     text-align: center;
     font-size: 3em;
 }
-main > section#menu > div#menutodos h3, p {
+main > section#section-menu > div#menutodos h3, p {
     font-family: var(--fonte);
 }
-main > section#menu > div#menutodos h3 {
+main > section#section-menu > div#menutodos h3 {
     font-weight: 800;
     display: inline-block;
     padding-bottom: 1px;
     padding-top: 3%;
 }
-main > section#menu > div#menutodos p {
+main > section#section-menu > div#menutodos p {
     text-align: justify;
 }
-main > section#menu > div#menutodos > div#menuburgers {
+main > section#section-menu > div#menutodos > div#menuburgers {
     position: absolute;
     height: 60vh;
     width: 100vw;
@@ -166,7 +166,7 @@ main > section#menu > div#menutodos > div#menuburgers {
     opacity: 1;
     transition: 0.3s;
 }
-main > section#menu > div#menutodos > div#menusoft-drinks {
+main > section#section-menu > div#menutodos > div#menusoft-drinks {
     position: absolute;
     width: 100vw;
     height: 65vh;
@@ -178,7 +178,7 @@ main > section#menu > div#menutodos > div#menusoft-drinks {
     opacity: 0;
     transition: 0.3s;
 }
-main > section#menu > div#menutodos > div#menuappetizer {
+main > section#section-menu > div#menutodos > div#menuappetizer {
     position: absolute;
     height: 60vh;
     width: 100vw;
@@ -190,7 +190,7 @@ main > section#menu > div#menutodos > div#menuappetizer {
     opacity: 0;
     transition: 0.3s;
 }
-main > section#menu > div#menutodos > div#menufries-and-más {
+main > section#section-menu > div#menutodos > div#menufries-and-mas {
     position: absolute;
     height: 60vh;
     width: 100vw;
@@ -202,7 +202,7 @@ main > section#menu > div#menutodos > div#menufries-and-más {
     opacity: 0;
     transition: 0.3s;
 }
-main > section#menu > div#menutodos > div#menusalads {
+main > section#section-menu > div#menutodos > div#menusalads {
     position: absolute;
     height: 60vh;
     width: 100vw;
@@ -214,7 +214,7 @@ main > section#menu > div#menutodos > div#menusalads {
     opacity: 0;
     transition: 0.3s;
 }
-main > section#menu > div#menutodos > div#menusweets {
+main > section#section-menu > div#menutodos > div#menusweets {
     position: absolute;
     height: 60vh;
     width: 100vw;
@@ -226,18 +226,18 @@ main > section#menu > div#menutodos > div#menusweets {
     opacity: 0;
     transition: 0.3s;
 }
-main > section#about {
+main > section#section-about {
     background-image: url("../imagens/Capaabout.png");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: var(--fonte);
     height: 100vh;
 }
-main > section#about > img {
+main > section#section-about > img {
     width: 100vw;
     margin-top: 20px;
 }
-main > section#about > p {
+main > section#section-about > p {
     font-weight: 400;
     color: white;
     padding-top: 50px;

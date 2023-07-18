@@ -1,7 +1,7 @@
 //animação da home
 
-const burger = document.getElementById('burger')
-const ingredientes = document.getElementById('ingredients')
+const burger = document.getElementById('burgerimg')
+const ingredientes = document.getElementById('ingredientsimg')
 const logo = document.getElementById('logo')
 const menuCabecalho = document.getElementById('menu-cabecalho')
 const menuCabecalho2 = document.getElementById('menu-cabecalho2')
@@ -43,8 +43,8 @@ menuClick.forEach(item =>{
 function scrollToSelection(event){
     event.preventDefault()
     var tagLink = event.target
-    var idLink = tagLink.getAttribute('href')
-    var idSection = document.querySelector(idLink)
+    var idLink = tagLink.getAttribute('id')
+    var idSection = document.querySelector('#section-' + idLink)
     var distanceFromTop = idSection.offsetTop
     window.scrollTo({top: distanceFromTop, behavior: 'smooth'})
 }
@@ -79,12 +79,12 @@ menu.forEach(item => {
 
 function trocaMenu(e){
     e.preventDefault()
-    conteudo = e.target.innerHTML
+    conteudo = e.target.id
     associaTroca(conteudo)
 }
 
 function associaTroca(conteudo){
-    var id = 'menu' + conteudo.trim().toLowerCase().replace(/\s+/g, "-");
+    var id = 'menu' + conteudo;
     var pagina = document.querySelectorAll('.menu-page')
     pagina.forEach(page =>{
         if(page.id == id){
