@@ -90,6 +90,7 @@ main > section#principal > a {
     position: absolute;
     top: 85%;
     left: 50%;
+    z-index: 2;
     transform: translateX(-50%);
     font-family: var(--fonte);
     font-weight: 600;
@@ -104,6 +105,24 @@ main > section#principal > a {
     opacity: 0;
     transition: 0.4s;
 }
+main > section#principal > div#logos > a#ubereats > img {
+    position: absolute;
+    width: 20vw;
+    top: 84%;
+    left: 30%;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s;
+}
+main > section#principal > div#logos > a#doordash > img {
+    position: absolute;
+    width: 20vw;
+    top: 84%;
+    right: 30%;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s;
+}
 main .titulo-section {
     font-family: var(--fonte);
     color: var(--links);
@@ -114,7 +133,7 @@ main .titulo-section {
 }
 main > section#section-menu {
     width: 100vw;
-    height: 100vh;
+    height: 115vh;
 }
 main > section#section-menu > img#menutitle {
     width: 100vw;
@@ -133,6 +152,11 @@ main > section#section-menu > nav > a {
     text-decoration: none;
     padding: 10px;
     font-size: 1.3em;
+}
+main > section#section-menu > div#menutodos{
+    display: block;
+    position: relative;
+    height: 75vh;
 }
 main > section#section-menu > div#menutodos h2 {
     font-family: var(--fonte);
@@ -156,8 +180,6 @@ main > section#section-menu > div#menutodos p {
 }
 main > section#section-menu > div#menutodos > div#menuburgers {
     position: absolute;
-    height: 60vh;
-    width: 100vw;
     transform: translateY(50px);
     background-image: url(../imagens/Fundo-Burger.png);
     background-size: contain;
@@ -169,12 +191,11 @@ main > section#section-menu > div#menutodos > div#menuburgers {
 main > section#section-menu > div#menutodos > div#menusoft-drinks {
     position: absolute;
     width: 100vw;
-    height: 65vh;
     transform: translateY(30px);
     background-image: url(../imagens/Fundo-Bebidas.png);
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 5px;
+    padding: 2px;
     opacity: 0;
     transition: 0.3s;
 }
@@ -226,6 +247,23 @@ main > section#section-menu > div#menutodos > div#menusweets {
     opacity: 0;
     transition: 0.3s;
 }
+main > section#section-menu > div a {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-family: var(--fonte);
+    font-weight: 600;
+    padding: 20px 30px;
+    background-color: var(--fundo2);
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
+}
 main > section#section-about {
     background-image: url("../imagens/Capaabout.png");
     background-size: cover;
@@ -238,7 +276,26 @@ main > section#section-about > img {
     margin-top: 20px;
 }
 main > section#section-about > p {
+    display: block;
+    height: 70vh;
     font-weight: 400;
     color: white;
     padding-top: 50px;
+}
+main > section#section-about a {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-family: var(--fonte);
+    font-weight: 600;
+    padding: 20px 30px;
+    background-color: var(--fundo);
+    color: var(--fundo2);
+    text-decoration: none;
+    font-size: 1.4em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
 }

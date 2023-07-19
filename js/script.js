@@ -68,6 +68,24 @@ function toggleVisibilidade(){
     }
 }
 
+//animação do order now
+
+var order = document.querySelector('#order')
+var logoUberEats = document.querySelector('#ubereats img')
+var logoDoordash = document.querySelector('#doordash img')
+
+order.addEventListener('click', trocaOrder)
+function trocaOrder(){
+    order.style.opacity = 0
+    order.style.zIndex = 1
+    logoUberEats.style.opacity = 1
+    logoUberEats.style.left = '15%'
+    logoUberEats.style.zIndex = 2
+    logoDoordash.style.opacity = 1
+    logoDoordash.style.right = '15%'
+    logoDoordash.style.zIndex = 2
+}
+
 //animação do menu
 
 var menu = document.querySelectorAll('.menu-item')
