@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;800&display=swap');
 
 :root {
-    --fundo: #f1e7d2;
+    --fundo: rgb(227, 228, 226);
     --links: #6E5437;
     --order: #BA9366;
-    --contraste: #416d49;
-    --fundo2: #233B27;
+    --contraste: rgb(59, 128, 50);
+    --fundo2: rgb(0, 102, 51);
     --fonte: Raleway;
 }
 * {
@@ -45,7 +45,7 @@ header > ul > li {
 header > ul > li > a {
     font-family: var(--fonte);
     color: white;
-    background-color: var(--contraste);
+    background-color: var(--fundo2);
     padding: 5px;
     border-radius: 7px;
     font-size: 1.5em;
@@ -161,7 +161,7 @@ main > section#section-menu > div#menutodos{
 main > section#section-menu > div#menutodos h2 {
     font-family: var(--fonte);
     font-weight: 800;
-    color: var(--contraste);
+    color: var(--fundo2);
     text-shadow: 2px 2px var(--fundo2);
     text-align: center;
     font-size: 3em;
@@ -280,7 +280,7 @@ main > section#section-about > p {
     height: 70vh;
     font-weight: 400;
     color: white;
-    padding-top: 50px;
+    padding: 50px 10px;
 }
 main > section#section-about a {
     display: inline-block;
