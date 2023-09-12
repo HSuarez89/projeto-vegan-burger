@@ -5,7 +5,7 @@ const ingredientes = document.getElementById('ingredientsimg')
 const logo = document.getElementById('logo')
 const menuCabecalho = document.getElementById('menu-cabecalho')
 const menuCabecalho2 = document.getElementById('menu-cabecalho2')
-const botaoOrder = document.getElementById('order')
+var botaoOrder = document.getElementById('order1')
 
 window.onload = function(){
     animacaoBurger()
@@ -49,7 +49,7 @@ function scrollToSelection(event){
     window.scrollTo({top: distanceFromTop, behavior: 'smooth'})
 }
 
-//animaçõ do botão que volta para o topo
+//animação do botão que volta para o topo
 
 var botaoTopo = document.querySelector('#botao')
 botaoTopo.addEventListener('click', scrollToTop)
@@ -68,22 +68,23 @@ function toggleVisibilidade(){
     }
 }
 
-//animação do order now
+//animação dos botões order now
+var botao = document.querySelectorAll('.order')
+var brickell = document.querySelector('#brickell')
+var southBeach = document.querySelector('#southbeach')
 
-var order = document.querySelector('#order')
-var logoUberEats = document.querySelector('#ubereats img')
-var logoDoordash = document.querySelector('#doordash img')
-
-order.addEventListener('click', trocaOrder)
-function trocaOrder(){
-    order.style.opacity = 0
-    order.style.zIndex = 1
-    logoUberEats.style.opacity = 1
-    logoUberEats.style.left = '15%'
-    logoUberEats.style.zIndex = 2
-    logoDoordash.style.opacity = 1
-    logoDoordash.style.right = '15%'
-    logoDoordash.style.zIndex = 2
+botao.forEach(item => {
+    item.addEventListener('click', trocaOrder)
+})
+function trocaOrder(e){
+    e.preventDefault()
+    console.log(botao)
+    botao.style.opacity = 0
+    botao.style.zIndex = 1
+    /*brickell.style.opacity = 1
+    brickell.style.zIndex = 2
+    southBeach.style.opacity = 1
+    southBeach.style.zIndex = 2*/
 }
 
 //animação do menu

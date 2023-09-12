@@ -105,6 +105,36 @@ main > section#principal > a {
     opacity: 0;
     transition: 0.4s;
 }
+main div.storesgreen > a.brickell {
+    position: absolute;
+    text-decoration: none;
+    top: 86.5%;
+    left: 20%;
+    font-family: var(--fonte);
+    font-size: 21px;
+    color: white;
+    background-color: var(--fundo2);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
+    /*opacity: 0;*/
+    transition: 0.4s;
+}
+main div.storesgreen > a.southbeach {
+    position: absolute;
+    text-decoration: none;
+    top: 86.5%;
+    left: 50%;
+    font-family: var(--fonte);
+    font-size: 21px;
+    color: white;
+    background-color: var(--fundo2);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
+    /*opacity: 0; */
+    transition: 0.4s;
+}
 main > section#principal > div#logos > a#ubereats > img {
     position: absolute;
     width: 20vw;
@@ -247,12 +277,11 @@ main > section#section-menu > div#menutodos > div#menusweets {
     opacity: 0;
     transition: 0.3s;
 }
-main > section#section-menu > div a {
+main > section#section-menu #ordermenu{
+    text-align: center;
+}
+main > section#section-menu a.order {
     display: inline-block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
     font-family: var(--fonte);
     font-weight: 600;
     padding: 20px 30px;
@@ -263,6 +292,41 @@ main > section#section-menu > div a {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
     border-radius: 30px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
+    transition: 0.4s;
+}
+main > section#section-menu a.brickell {
+    display: inline-block;
+    position: absolute;
+    left: 20%;
+    transform: translateY(25%);
+    z-index: 1;
+    text-decoration: none;
+    font-family: var(--fonte);
+    font-size: 21px;
+    color: white;
+    background-color: var(--fundo2);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
+    opacity: 0;
+    transition: 0.4s;
+}
+main > section#section-menu a.southbeach {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateY(25%);
+    z-index: 1;
+    text-decoration: none;
+    font-family: var(--fonte);
+    font-size: 21px;
+    color: white;
+    background-color: var(--fundo2);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
+    opacity: 0;
+    transition: 0.4s;
 }
 main > section#section-about {
     background-image: url("../imagens/Capaabout.png");
