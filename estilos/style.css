@@ -19,6 +19,7 @@ body {
     background-color: var(--fundo);
     overflow-x: hidden;
 }
+/* Cabeçalho*/
 header {
     position: absolute;
     width: 100vw;
@@ -51,9 +52,11 @@ header > ul > li > a {
     font-size: 1.5em;
     text-decoration: none;
 }
+/* Seção principal */
 main {
     background-color: var(--fundo);
 }
+/* Botão para voltar ao topo */
 main > section#sectionbotao{
     position: fixed;
     top: 80vh;
@@ -67,6 +70,7 @@ main #botao {
     opacity: 0;
     transition: 0.3s;
 }
+/* Fundo Home */
 main > section#principal {
     width: 100vw;
     height: 100vh;
@@ -86,6 +90,7 @@ main > section#principal > img#ingredientsimg {
     opacity: 0;
     transition: 0.3s;
 }
+/* Link 'Order Now' Home */
 main > section#principal > a {
     position: absolute;
     top: 85%;
@@ -117,7 +122,7 @@ main div.storesgreen > a.brickell {
     padding: 10px;
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
-    /*opacity: 0;*/
+    opacity: 0;
     transition: 0.4s;
 }
 main div.storesgreen > a.southbeach {
@@ -132,7 +137,7 @@ main div.storesgreen > a.southbeach {
     padding: 10px;
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
-    /*opacity: 0; */
+    opacity: 0;
     transition: 0.4s;
 }
 main > section#principal > div#logos > a#ubereats > img {
@@ -153,14 +158,45 @@ main > section#principal > div#logos > a#doordash > img {
     opacity: 0;
     transition: 0.2s;
 }
-main .titulo-section {
+/* Seção About */
+main > section#section-about {
+    background-image: url("../imagens/Capaabout.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: var(--fonte);
-    color: var(--links);
-    font-weight: bold;
-    font-size: 2em;
-    padding-left: 10%;
-    padding-top: 3%;
+    height: 100vh;
 }
+main > section#section-about > img {
+    width: 100vw;
+    margin-top: 20px;
+}
+main > section#section-about > p {
+    display: block;
+    height: 70vh;
+    font-weight: 400;
+    color: white;
+    padding: 50px 10px;
+}
+/* Link 'Order Now' da seção about */
+main > section#section-about a {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-family: var(--fonte);
+    font-weight: 600;
+    padding: 20px 30px;
+    background-color: var(--fundo);
+    color: var(--fundo2);
+    text-decoration: none;
+    font-size: 1.4em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
+    transition: 0.4s;
+}
+/* Seção do cardápio */
 main > section#section-menu {
     width: 100vw;
     height: 115vh;
@@ -277,11 +313,12 @@ main > section#section-menu > div#menutodos > div#menusweets {
     opacity: 0;
     transition: 0.3s;
 }
-main > section#section-menu #ordermenu{
-    text-align: center;
-}
+/* Link 'Order Now' do menu */
 main > section#section-menu a.order {
     display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: var(--fonte);
     font-weight: 600;
     padding: 20px 30px;
@@ -327,39 +364,4 @@ main > section#section-menu a.southbeach {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
     opacity: 0;
     transition: 0.4s;
-}
-main > section#section-about {
-    background-image: url("../imagens/Capaabout.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: var(--fonte);
-    height: 100vh;
-}
-main > section#section-about > img {
-    width: 100vw;
-    margin-top: 20px;
-}
-main > section#section-about > p {
-    display: block;
-    height: 70vh;
-    font-weight: 400;
-    color: white;
-    padding: 50px 10px;
-}
-main > section#section-about a {
-    display: inline-block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    font-family: var(--fonte);
-    font-weight: 600;
-    padding: 20px 30px;
-    background-color: var(--fundo);
-    color: var(--fundo2);
-    text-decoration: none;
-    font-size: 1.4em;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
-    border-radius: 30px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
 }

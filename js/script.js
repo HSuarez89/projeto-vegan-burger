@@ -5,7 +5,8 @@ const ingredientes = document.getElementById('ingredientsimg')
 const logo = document.getElementById('logo')
 const menuCabecalho = document.getElementById('menu-cabecalho')
 const menuCabecalho2 = document.getElementById('menu-cabecalho2')
-var botaoOrder = document.getElementById('order1')
+const botaoOrder1 = document.getElementById('order1')
+
 
 window.onload = function(){
     animacaoBurger()
@@ -30,7 +31,7 @@ function animacaoIngredientes(){
 function animacaoHome(){
     logo.style.opacity = 1
     menuCabecalho.style.opacity = 1
-    botaoOrder.style.opacity = 1
+    botaoOrder1.style.opacity = 1
 }
 
 //animação de scroll do menu
@@ -77,10 +78,11 @@ botao.forEach(item => {
     item.addEventListener('click', trocaOrder)
 })
 function trocaOrder(e){
-    e.preventDefault()
-    console.log(botao)
-    botao.style.opacity = 0
-    botao.style.zIndex = 1
+    e.preventDefault();
+    botao.forEach(item => {
+        item.style.opacity = 0;
+        item.style.zIndex = 1;
+    });
     /*brickell.style.opacity = 1
     brickell.style.zIndex = 2
     southBeach.style.opacity = 1
