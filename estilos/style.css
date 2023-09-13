@@ -115,6 +115,7 @@ main div.storesgreen > a.brickell {
     text-decoration: none;
     top: 86.5%;
     left: 20%;
+    z-index: 1;
     font-family: var(--fonte);
     font-size: 21px;
     color: white;
@@ -130,6 +131,7 @@ main div.storesgreen > a.southbeach {
     text-decoration: none;
     top: 86.5%;
     left: 50%;
+    z-index: -1;
     font-family: var(--fonte);
     font-size: 21px;
     color: white;
@@ -140,23 +142,25 @@ main div.storesgreen > a.southbeach {
     opacity: 0;
     transition: 0.4s;
 }
-main > section#principal > div#logos > a#ubereats > img {
+main > section#principal > div.logos > a.ubereats > img {
     position: absolute;
     width: 20vw;
     top: 84%;
-    left: 30%;
-    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0;
-    transition: 0.2s;
+    z-index: -1;
+    transition: 0.4s;
 }
-main > section#principal > div#logos > a#doordash > img {
+main > section#principal > div.logos > a.doordash > img {
     position: absolute;
     width: 20vw;
     top: 84%;
-    right: 30%;
-    z-index: 1;
+    right: 50%;
+    transform: translateX(50%);
     opacity: 0;
-    transition: 0.2s;
+    z-index: 1;
+    transition: 0.4s;
 }
 /* Seção About */
 main > section#section-about {
@@ -178,7 +182,7 @@ main > section#section-about > p {
     padding: 50px 10px;
 }
 /* Link 'Order Now' da seção about */
-main > section#section-about a {
+main > section#section-about a.order {
     display: inline-block;
     position: relative;
     left: 50%;
@@ -196,6 +200,60 @@ main > section#section-about a {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
     transition: 0.4s;
 }
+main > section#section-about a.brickell {
+    display: inline-block;
+    position: absolute;
+    left: 20%;
+    transform: translateY(25%);
+    z-index: 1;
+    text-decoration: none;
+    font-family: var(--fonte);
+    font-size: 21px;
+    color: var(--fundo2);
+    background-color: var(--fundo);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
+    opacity: 0;
+    transition: 0.4s;
+}
+main > section#section-about a.southbeach {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateY(25%);
+    z-index: 1;
+    text-decoration: none;
+    font-family: var(--fonte);
+    font-size: 21px;
+    color: var(--fundo2);
+    background-color: var(--fundo);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
+    opacity: 0;
+    transition: 0.4s;
+}
+main > section#section-about > div a.ubereats img {
+    display: inline;
+    position: absolute;
+    width: 20vw;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+main > section#section-about > div a.doordash img {
+    position: absolute;
+    width: 20vw;
+    right: 50%;
+    transform: translateX(50%);
+    opacity: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+
 /* Seção do cardápio */
 main > section#section-menu {
     width: 100vw;
@@ -319,6 +377,7 @@ main > section#section-menu a.order {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
     font-family: var(--fonte);
     font-weight: 600;
     padding: 20px 30px;
@@ -363,5 +422,24 @@ main > section#section-menu a.southbeach {
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
     opacity: 0;
+    transition: 0.4s;
+}
+main > section#section-menu > div#ordermenu a.ubereats img {
+    display: inline;
+    position: absolute;
+    width: 20vw;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+main > section#section-menu > div#ordermenu a.doordash img {
+    position: absolute;
+    width: 20vw;
+    right: 50%;
+    transform: translateX(50%);
+    opacity: 0;
+    z-index: -1;
     transition: 0.4s;
 }

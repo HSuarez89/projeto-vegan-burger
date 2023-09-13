@@ -71,22 +71,65 @@ function toggleVisibilidade(){
 
 //animação dos botões order now
 var botao = document.querySelectorAll('.order')
-var brickell = document.querySelector('#brickell')
-var southBeach = document.querySelector('#southbeach')
+var brickell = document.querySelectorAll('.brickell')
+var southBeach = document.querySelectorAll('.southbeach')
 
 botao.forEach(item => {
     item.addEventListener('click', trocaOrder)
 })
 function trocaOrder(e){
-    e.preventDefault();
+    e.preventDefault()
     botao.forEach(item => {
-        item.style.opacity = 0;
-        item.style.zIndex = 1;
-    });
-    /*brickell.style.opacity = 1
-    brickell.style.zIndex = 2
-    southBeach.style.opacity = 1
-    southBeach.style.zIndex = 2*/
+        item.style.opacity = 0
+        item.style.zIndex = -1
+        stores()
+    })
+}
+function stores(){
+    brickell.forEach(item => {
+        item.style.opacity = 1
+        item.style.zIndex = 3
+    })
+    southBeach.forEach(item => {
+        item.style.opacity = 1
+        item.style.zIndex = 3
+    })
+}
+
+//animação dos icones dos apps
+var uberEats = document.querySelectorAll('.imgubereats')
+var doorDash = document.querySelectorAll('.imgdoordash')
+
+brickell.forEach(item => {
+    item.addEventListener('click', brikellApps)
+})
+southBeach.forEach(item => {
+    item.addEventListener('click', southBeachApps)
+})
+function southBeachApps(e){
+    e.preventDefault()
+    storesOut()
+}
+function brikellApps(e){
+    e.preventDefault()
+    storesOut()
+    showBrickell()
+}
+function storesOut(){
+    brickell.forEach(item => {
+        item.style.opacity = 0
+        item.style.zIndex = -1
+    })
+    southBeach.forEach(item => {
+        item.style.opacity = 0
+        item.style.zIndex = -1
+    })
+}
+function showBrickell(){
+    uberEats.forEach(item => {
+        item.style.opacity = 1
+        item.style.zIndex = 3
+    })
 }
 
 //animação do menu
