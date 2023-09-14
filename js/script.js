@@ -109,6 +109,7 @@ southBeach.forEach(item => {
 function southBeachApps(e){
     e.preventDefault()
     storesOut()
+    showSouthBeach()
 }
 function brikellApps(e){
     e.preventDefault()
@@ -129,9 +130,32 @@ function showBrickell(){
     uberEats.forEach(item => {
         item.style.opacity = 1
         item.style.zIndex = 3
+        item.addEventListener('click', redirecionaBrickellUberEats)
     })
 }
-
+function showSouthBeach(){
+    uberEats.forEach(item=> {
+        item.style.opacity = 1
+        item.style.zIndex = 3
+        item.style.left = '30%'
+        item.addEventListener('click', redirecionaUberEatsSouthBeach)
+    })
+    doorDash.forEach(item => {
+        item.style.opacity = 1
+        item.style.zIndex = 3
+        item.style.right = '30%'
+        item.addEventListener('click', redirecionaDoordashSouthBeach)
+    })
+}
+function redirecionaBrickellUberEats(){
+    window.location.href = 'https://www.ubereats.com/store/vegan-burger-miami/HdO2Sc6MRse9jYuwSuIh1Q?diningMode=PICKUP'
+}
+function redirecionaUberEatsSouthBeach(){
+    window.location.href = 'https://www.ubereats.com/store/vegan-burger-miami/mvuPiB3uQ_WotPh_iYoXTw?diningMode=PICKUP'
+}
+function redirecionaDoordashSouthBeach(){
+    window.location.href = 'https://www.doordash.com/store/vegan-burger-miami-miami-beach-1435117/'
+}
 //animação do menu
 
 var menu = document.querySelectorAll('.menu-item')

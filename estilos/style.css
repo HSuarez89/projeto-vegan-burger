@@ -142,9 +142,10 @@ main div.storesgreen > a.southbeach {
     opacity: 0;
     transition: 0.4s;
 }
-main > section#principal > div.logos > a.ubereats > img {
+main > section#principal .imgubereats {
     position: absolute;
     width: 20vw;
+    height: 20vw;
     top: 84%;
     left: 50%;
     transform: translateX(-50%);
@@ -152,7 +153,7 @@ main > section#principal > div.logos > a.ubereats > img {
     z-index: -1;
     transition: 0.4s;
 }
-main > section#principal > div.logos > a.doordash > img {
+main > section#principal .imgdoordash {
     position: absolute;
     width: 20vw;
     top: 84%;
@@ -234,8 +235,7 @@ main > section#section-about a.southbeach {
     opacity: 0;
     transition: 0.4s;
 }
-main > section#section-about > div a.ubereats img {
-    display: inline;
+main > section#section-about .imgubereats {
     position: absolute;
     width: 20vw;
     left: 50%;
@@ -244,7 +244,7 @@ main > section#section-about > div a.ubereats img {
     z-index: -1;
     transition: 0.4s;
 }
-main > section#section-about > div a.doordash img {
+main > section#section-about .imgdoordash {
     position: absolute;
     width: 20vw;
     right: 50%;
@@ -424,8 +424,7 @@ main > section#section-menu a.southbeach {
     opacity: 0;
     transition: 0.4s;
 }
-main > section#section-menu > div#ordermenu a.ubereats img {
-    display: inline;
+main > section#section-menu .imgubereats {
     position: absolute;
     width: 20vw;
     left: 50%;
@@ -434,7 +433,7 @@ main > section#section-menu > div#ordermenu a.ubereats img {
     z-index: -1;
     transition: 0.4s;
 }
-main > section#section-menu > div#ordermenu a.doordash img {
+main > section#section-menu .imgdoordash {
     position: absolute;
     width: 20vw;
     right: 50%;
